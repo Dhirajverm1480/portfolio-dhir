@@ -2,10 +2,10 @@ import { Link, NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <div className="sticky top-0">
+    <div className="sticky top-0 border-b backdrop-blur-lg">
       <nav className="w-full flex justify-between items-center p-3">
         <Link to="/" className="text-2xl font-sans">Dhiraj Verma.</Link>
-        <ul className="w-[25%] flex justify-between">
+        <ul className="hidden sm:block w-[25%] sm:flex sm:justify-between">
           <NavLink to="/">
             <span>Home</span>
           </NavLink>

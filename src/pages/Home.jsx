@@ -1,9 +1,8 @@
-import React from 'react'
 
 const Home = () => {
   return (
-    <div className='flex justify-between items-center h-[89vh] p-4'>
-      <div className='w-[50%] flex flex-col gap-3 border-r'>
+    <div className='flex justify-between items-center h-[100vh] p-4 bg-cover bg-no-repeat bg-fixed bg-center'>
+      <div className='w-[50%] flex flex-col gap-3'>
         <h2 className='text-3xl'>Hi, I'm <span>Dhiraj Verma.</span></h2>
         <h4 className='text-xl'>Frontend Developer| HTML5, CSS3, JS, React.js Enthusiast</h4>
         <p className='text-8'>I create seamless, interactive web experiences that bring your ideas to life.</p>
