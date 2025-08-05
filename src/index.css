@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./assets/image1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+}
+
 a.active{
     border-bottom: 1px solid #808080;
 }
