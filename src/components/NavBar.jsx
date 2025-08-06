@@ -1,10 +1,14 @@
 import { Link, NavLink } from "react-router-dom";
+import MenuImg from '../assets/icons/menu-left.png'
 
 const NavBar = () => {
   return (
     <div className="sticky top-0 border-b backdrop-blur-lg">
       <nav className="w-full flex justify-between items-center p-3">
-        <Link to="/" className="text-2xl font-sans">Dhiraj Verma.</Link>
+        <div className="flex items-center gap-10">
+          <img src={MenuImg} alt="" className="cursor-pointer"/>
+          <Link to="/" className="text-2xl font-sans">Dhiraj Verma.</Link>
+        </div>
         <ul className="hidden sm:block w-[25%] sm:flex sm:justify-between">
           <NavLink to="/">
             <span>Home</span>

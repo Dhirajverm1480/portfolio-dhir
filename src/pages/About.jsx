@@ -6,8 +6,8 @@ const About = () => {
   return (
     <div className="w-full">
       {/* <Title title={'About'} /> */}
-      <div className="flex justify-between w-full p-5">
-        <div className="w-[50%]">
+      <div className=" sm:flex justify-between items-center w-full p-5">
+        <div className="sm:w-[50%]">
           <Title title={"About"} />
           <p className="py-5">
             Hi, I’m Dev — a frontend developer with a passion for building
@@ -23,7 +23,7 @@ const About = () => {
             Contact Me
           </button>
         </div>
-        <div className="w-[50%] flex justify-center items-center">
+        <div className="sm:w-[50%] flex justify-center items-center">
           <img src={Image} alt="" className="w-96" />
         </div>
       </div>
