@@ -17,5 +17,5 @@ a.active {
 }
 
 .btn-hover {
-  @apply bg-black text-white;
+  @apply hover:bg-white hover:text-black;
 }
