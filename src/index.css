@@ -16,6 +16,18 @@ a.active {
   border-bottom: 1px solid #808080;
 }
 
+.btn {
+  @apply sm:w-44 p-2 mt-4
+}
+
 .btn-hover {
   @apply hover:bg-white hover:text-black;
+}
+
+.side-text {
+  @apply text-3xl p-2
+}
+
+.social-card {
+  @apply w-20 h-20 flex justify-center items-center rounded-lg border p-2 m-2 cursor-pointer sm:backdrop-blur-md hover:bg-white hover:text-black
 }
