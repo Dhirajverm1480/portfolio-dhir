@@ -1,4 +1,3 @@
-import React from "react";
 import Image1 from "../assets/image.png";
 import LinkArrow from "../assets/icons/LinkArrow.png";
 import { Link } from "react-router-dom";
