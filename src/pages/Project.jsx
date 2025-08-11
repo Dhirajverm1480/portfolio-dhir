@@ -1,20 +1,27 @@
-import ProjectCard from "../components/ProjectCard"
-import { projectsData } from "../constants/data"
+import ProjectCard from "../components/ProjectCard";
+import { projectsData } from "../constants/data";
+import Title from '../components/Title'
 
 const Project = () => {
-  console.log("Data", projectsData)
+  console.log("Data", projectsData);
 
   return (
-    <div className="w-full flex flex-wrap justify-between p-2">
-      {
-        projectsData.projects.map((item) => (
-          <div key={item.id}>
-            <ProjectCard id={item.id} title={item.title} subtitle={item.subtitle} image={item.images?.thumbnail} />
+    <div>
+      {/* <Title title={'Project'} /> */}
+      <div className="w-full sm:flex sm:justify-center sm:flex-wrap p-2">
+        {projectsData.projects.map((item) => (
+          <div key={item.id} className="sm:w-[30%] p-2">
+            <ProjectCard
+              id={item.id}
+              title={item.title}
+              subtitle={item.subtitle}
+              image={item.images?.thumbnail}
+            />
           </div>
-        ))
-      }
+        ))}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;
