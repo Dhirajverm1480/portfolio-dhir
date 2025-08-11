@@ -1,13 +1,11 @@
 import ProjectCard from "../components/ProjectCard";
 import { projectsData } from "../constants/data";
-import Title from '../components/Title'
 
 const Project = () => {
   console.log("Data", projectsData);
 
   return (
     <div>
-      {/* <Title title={'Project'} /> */}
       <div className="w-full sm:flex sm:justify-center sm:flex-wrap p-2">
         {projectsData.projects.map((item) => (
           <div key={item.id} className="sm:w-[30%] p-2">
