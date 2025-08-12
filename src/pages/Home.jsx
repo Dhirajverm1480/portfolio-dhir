@@ -1,7 +1,7 @@
 
 const Home = () => {
   return (
-    <div className='w-full flex items-center px-6 h-[90vh]'>
+    <div className='page-frame flex items-center h-[90vh]'>
       <div className=' flex flex-col gap-4'>
         <h2 className='text-[9vw] sm:text-[10vh]'>Hi, I'm <span>Dhiraj Verma.</span></h2>
         <h4 className='sm:text-xl'>Frontend Developer| HTML5, CSS3, JS, React.js Enthusiast</h4>

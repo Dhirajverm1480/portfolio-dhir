@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
-    <div className="w-full px-2 py-5">
+    <div className="page-frame">
       {/* <Title title={"Contact"} /> */}
       <div className="w-full sm:flex justify-between py-4 gap-2">
         <div className="w-full sm:w-[40%] flex flex-col justify-between sm:px-6">

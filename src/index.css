@@ -16,8 +16,16 @@ a.active {
   border-bottom: 1px solid #808080;
 }
 
+.page-frame{
+  @apply w-full p-5
+}
+
 .btn {
-  @apply sm:w-44 p-2 mt-4
+  @apply w-full sm:w-44 p-2 mt-4
+}
+
+.btn-border{
+  @apply border
 }
 
 .btn-hover {

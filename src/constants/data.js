@@ -429,3 +429,50 @@ export const projectsData = {
         },
     ],
 };
+
+export const educationData = {
+    education: [
+        {
+            id: "edu-001",
+            title: "BCA (Bachlor of Computer Application)",
+            institution: "Glocal University",
+            field: "Computer scince and IT",
+            type: "Degree",
+            status: "Completed",
+            timeline: {
+                start: '01-07-2022',
+                end: '31-05-2025',
+                duration: "3 years",
+            },
+
+        },
+        {
+            id: "edu-003",
+            title: "10 + 2 Intermidiate",
+            institution: "B.L.D Inter Collage",
+            field: "PCM",
+            type: "InterMidiate",
+            status: "Completed",
+            timeline: {
+                start: '01-07-2018',
+                end: '31-05-2020',
+                duration: "2 years",
+            },
+
+        },
+        {
+            id: "edu-003",
+            title: "10th High School",
+            institution: "A.S.S.K.K Inter Collage",
+            field: "All Subject",
+            type: "High School",
+            status: "Completed",
+            timeline: {
+                start: '01-07-2016',
+                end: '31-05-2018',
+                duration: "2 years",
+            },
+
+        }
+    ]
+}

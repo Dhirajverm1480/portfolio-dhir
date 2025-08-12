@@ -12,8 +12,10 @@ const ProjectCard = ({ id, image, title, subtitle, url }) => {
         }}
       >
         <img src={LinkArrow} alt="" className="absolute top-[2%] right-[1%]" />
-        <h2>{title}</h2>
-        <p>{subtitle}</p>
+        <div className="absolute bottom-3 left-2">
+          <h2>{title}</h2>
+          <p>{subtitle}</p>
+        </div>
       </div>
     </Link>
   );
