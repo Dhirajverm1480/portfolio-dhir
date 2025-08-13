@@ -1,7 +1,7 @@
 import React from 'react'
 import Title from './Title'
 
-const Education = ({ title, institution, start, end, duration }) => {
+const Education = ({ title, institution, start, end, duration, description }) => {
     return (
         <div>
             <Title title={title} />
@@ -13,6 +13,7 @@ const Education = ({ title, institution, start, end, duration }) => {
                 </div>
                 <span>{duration}</span>
             </div>
+            <p className='text-gray-400 py-2'>{description}</p>
         </div>
     )
 }

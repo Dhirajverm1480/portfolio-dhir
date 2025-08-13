@@ -434,45 +434,532 @@ export const educationData = {
     education: [
         {
             id: "edu-001",
-            title: "BCA (Bachlor of Computer Application)",
+            title: "Bachelor of Computer Application (BCA)",
             institution: "Glocal University",
-            field: "Computer scince and IT",
-            type: "Degree",
-            status: "Completed",
+            location: "Saharanpur, Uttar Pradesh, India",
+            field: "Computer Science and Information Technology",
+            type: "Undergraduate Degree",
+            status: "Ongoing",
+            grade: null,
             timeline: {
                 start: '01-07-2022',
                 end: '31-05-2025',
-                duration: "3 years",
+                duration: "3 years"
             },
-
+            description: "The BCA program covers fundamental and advanced concepts of computer science, software development, web technologies, and database management. Students engage in both theoretical coursework and practical projects.",
+            courses: [
+                "Data Structures and Algorithms",
+                "Operating Systems",
+                "Database Management Systems",
+                "Web Development",
+                "Computer Networks",
+                "Object-Oriented Programming (Java, C++)",
+                "Python Programming",
+                "Software Engineering"
+            ],
+            projects: [
+                {
+                    title: "Online Library Management System",
+                    description: "Developed a full-stack web application to manage book inventory, student records, and borrowing history using HTML, CSS, JavaScript, and PHP.",
+                    technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+                    year: 2024
+                }
+            ],
+            achievements: [
+                "Secured 1st position in the intra-college coding competition (2023)",
+                "Developed a college attendance management system for internal use"
+            ],
+            skillsLearned: [
+                "Problem-solving",
+                "Team collaboration",
+                "Version control (Git)",
+                "Agile methodology",
+                "Full-stack development"
+            ]
         },
         {
-            id: "edu-003",
-            title: "10 + 2 Intermidiate",
-            institution: "B.L.D Inter Collage",
-            field: "PCM",
-            type: "InterMidiate",
+            id: "edu-002",
+            title: "10+2 (Intermediate)",
+            institution: "B.L.D. Inter College",
+            location: "Muzaffarnagar, Uttar Pradesh, India",
+            field: "Physics, Chemistry, Mathematics (PCM)",
+            type: "Intermediate (Senior Secondary Certificate)",
             status: "Completed",
+            grade: "Passed with First Division (72%)",
             timeline: {
                 start: '01-07-2018',
                 end: '31-05-2020',
-                duration: "2 years",
+                duration: "2 years"
             },
-
+            description: "Completed senior secondary education with a focus on core science subjects. The curriculum emphasized mathematical reasoning, problem-solving in physics, and foundational concepts in chemistry.",
+            courses: [
+                "Physics",
+                "Chemistry",
+                "Mathematics",
+                "English",
+                "Computer Science"
+            ],
+            projects: [],
+            achievements: [
+                "Top 10% in board exams at district level",
+                "Participated in State-Level Science Quiz"
+            ],
+            skillsLearned: [
+                "Time management",
+                "Analytical thinking",
+                "Scientific reasoning"
+            ]
         },
         {
             id: "edu-003",
-            title: "10th High School",
-            institution: "A.S.S.K.K Inter Collage",
-            field: "All Subject",
-            type: "High School",
+            title: "10th (High School)",
+            institution: "A.S.S.K.K. Inter College",
+            location: "Muzaffarnagar, Uttar Pradesh, India",
+            field: "General Education",
+            type: "Secondary School Certificate (SSC)",
             status: "Completed",
+            grade: "Passed with Distinction (80%)",
             timeline: {
                 start: '01-07-2016',
                 end: '31-05-2018',
-                duration: "2 years",
+                duration: "2 years"
             },
-
+            description: "Completed foundational secondary education including all mandatory subjects, focusing on logical thinking, general science, and language proficiency.",
+            courses: [
+                "Mathematics",
+                "Science (Physics, Chemistry, Biology)",
+                "English",
+                "Hindi",
+                "Social Studies (History, Civics, Geography)"
+            ],
+            projects: [
+                {
+                    title: "Solar System Model",
+                    description: "Created a working model of the solar system using recycled materials for the school science exhibition.",
+                    year: 2017
+                }
+            ],
+            achievements: [
+                "Class topper in Mathematics and Science",
+                "Winner of district-level essay competition"
+            ],
+            skillsLearned: [
+                "Basic computer literacy",
+                "Communication skills",
+                "Presentation skills"
+            ]
         }
     ]
 }
+
+export const hobbyData = {
+    hobbies: [
+        {
+            id: "hobby-001",
+            name: "Coding",
+            category: "Technical",
+            description: "I love building web applications, automating tasks, and exploring new frameworks and languages. Coding not only helps me solve real-world problems but also keeps my logical thinking sharp.",
+            relatedSkills: ["Problem Solving", "Programming", "Debugging", "Creativity"],
+            frequency: "Daily",
+            since: "2019",
+            media: {
+                icon: "💻",
+                imageUrl: null // Add a URL if you want to display a relevant image
+            }
+        },
+        {
+            id: "hobby-002",
+            name: "Reading",
+            category: "Mental",
+            description: "I regularly read books, blogs, and articles on technology, psychology, and science fiction. Reading helps me relax while expanding my vocabulary and understanding of the world.",
+            relatedSkills: ["Focus", "Critical Thinking", "Language Comprehension"],
+            frequency: "4–5 times a week",
+            since: "2015",
+            media: {
+                icon: "📚",
+                imageUrl: null
+            }
+        },
+        {
+            id: "hobby-003",
+            name: "Gaming",
+            category: "Entertainment",
+            description: "I enjoy playing both story-driven and strategic games. It’s a great way to unwind and improve decision-making, pattern recognition, and reaction time.",
+            relatedSkills: ["Strategy", "Quick Thinking", "Hand-Eye Coordination"],
+            frequency: "2–3 times a week",
+            since: "2012",
+            media: {
+                icon: "🎮",
+                imageUrl: null
+            }
+        },
+        {
+            id: "hobby-004",
+            name: "Music",
+            category: "Creative",
+            description: "I listen to a wide range of music, especially instrumental, electronic, and lo-fi tracks. Music helps me focus while working and keeps my energy levels balanced.",
+            relatedSkills: ["Focus", "Mood Regulation", "Cultural Awareness"],
+            frequency: "Daily",
+            since: "2010",
+            media: {
+                icon: "🎧",
+                imageUrl: null
+            }
+        },
+        {
+            id: "hobby-005",
+            name: "Traveling",
+            category: "Exploratory",
+            description: "I love discovering new places, cultures, and cuisines. Traveling broadens my perspective, builds confidence, and gives me real-world stories to learn from.",
+            relatedSkills: ["Adaptability", "Planning", "Communication", "Curiosity"],
+            frequency: "Occasionally (few trips per year)",
+            since: "2016",
+            media: {
+                icon: "🌍",
+                imageUrl: null
+            }
+        }
+    ]
+};
+
+export const internshipData = {
+    internships: [
+        {
+            id: "intern-001",
+            title: "Frontend Developer Intern",
+            company: "TechNova Solutions",
+            location: "Bangalore, India",
+            type: "Remote",
+            status: "Completed",
+            timeline: {
+                start: "01-06-2024",
+                end: "31-08-2024",
+                duration: "3 months"
+            },
+            description: "Worked as a frontend developer intern to build responsive web interfaces and improve UI/UX of existing projects using modern frameworks.",
+            responsibilities: [
+                "Developed reusable React components with styled-components and Tailwind CSS.",
+                "Collaborated with backend team to integrate REST APIs.",
+                "Participated in daily standups and sprint planning in an Agile environment.",
+                "Performed cross-browser testing and fixed UI inconsistencies."
+            ],
+            technologies: ["React.js", "JavaScript", "HTML5", "CSS3", "Tailwind CSS", "Git", "REST APIs"],
+            achievements: [
+                "Optimized page load speed by 30% by implementing lazy loading.",
+                "Received appreciation from the team lead for delivering UI revamp ahead of schedule."
+            ]
+        },
+        {
+            id: "intern-002",
+            title: "Software Engineering Intern",
+            company: "CodeSpark Pvt. Ltd.",
+            location: "Delhi, India",
+            type: "Onsite",
+            status: "Completed",
+            timeline: {
+                start: "01-01-2024",
+                end: "31-03-2024",
+                duration: "3 months"
+            },
+            description: "Assisted in backend development and testing for a SaaS product. Worked on debugging and writing automation scripts.",
+            responsibilities: [
+                "Contributed to backend services built with Node.js and Express.",
+                "Wrote unit tests using Jest and conducted code reviews.",
+                "Created documentation for APIs and internal tools.",
+                "Collaborated with DevOps team for CI/CD automation tasks."
+            ],
+            technologies: ["Node.js", "Express", "MongoDB", "Jest", "GitLab CI/CD"],
+            achievements: [
+                "Reduced build deployment errors by 40% through automation scripts.",
+                "Completed internal bug-fix sprint with 100% issue resolution."
+            ]
+        }
+    ]
+};
+
+export const certificationData = {
+    certifications: [
+        {
+            id: "cert-001",
+            title: "Frontend Development with React",
+            issuer: "Coursera (offered by Meta)",
+            issuedDate: "15-07-2024",
+            validTill: null,
+            credentialId: "META-FD-2024-XYZ123",
+            credentialUrl: "https://www.coursera.org/account/accomplishments/certificate/XYZ123",
+            description: "This course covered core React concepts including component-based architecture, state management, hooks, and deployment best practices.",
+            technologies: ["React", "JavaScript", "HTML", "CSS", "Git"],
+            status: "Completed"
+        },
+        {
+            id: "cert-002",
+            title: "JavaScript Algorithms and Data Structures",
+            issuer: "freeCodeCamp",
+            issuedDate: "01-04-2024",
+            validTill: null,
+            credentialId: "FCC-JS-2024-ABC456",
+            credentialUrl: "https://www.freecodecamp.org/certification/username/javascript-algorithms-and-data-structures",
+            description: "Covered essential JavaScript programming techniques, including recursion, array manipulation, object-oriented programming, and algorithmic problem solving.",
+            technologies: ["JavaScript", "ES6", "Data Structures", "Algorithms"],
+            status: "Completed"
+        },
+        {
+            id: "cert-003",
+            title: "MongoDB for Developers",
+            issuer: "MongoDB University",
+            issuedDate: "10-06-2024",
+            validTill: "10-06-2026",
+            credentialId: "MDB-DEV-7891011",
+            credentialUrl: "https://university.mongodb.com/certificates/MDB-DEV-7891011",
+            description: "Focused on CRUD operations, data modeling, aggregation framework, indexing, and performance optimization with MongoDB.",
+            technologies: ["MongoDB", "Mongoose", "NoSQL"],
+            status: "Completed"
+        }
+    ]
+};
+
+export const skillData = {
+    skills: [
+        {
+            id: "skill-001",
+            name: "JavaScript",
+            category: "Programming Language",
+            level: "Advanced",
+            experienceYears: 4,
+            description: "I have extensive experience developing dynamic web applications using JavaScript, including ES6 features like async/await, destructuring, and promises. I've built several personal projects and contributed to open-source projects on GitHub.",
+            useCases: [
+                "Built a task management web app with JavaScript and Node.js.",
+                "Created a personal portfolio website that integrates real-time data using JavaScript."
+            ],
+            technologies: ["ES6", "Node.js", "Express", "React", "Vue.js", "Webpack", "Jest"],
+            tools: ["Visual Studio Code", "Git", "GitHub", "npm", "Babel"],
+            relatedProjects: [
+                {
+                    name: "Task Manager App",
+                    description: "A full-stack task manager application with user authentication and real-time updates.",
+                    link: "https://github.com/username/task-manager"
+                },
+                {
+                    name: "Portfolio Website",
+                    description: "A personal portfolio website to showcase my projects and skills, built using pure JavaScript, HTML, and CSS.",
+                    link: "https://github.com/username/portfolio"
+                }
+            ],
+            learningResources: [
+                "JavaScript: The Good Parts by Douglas Crockford",
+                "You Don't Know JS by Kyle Simpson",
+                "MDN Web Docs"
+            ],
+            achievements: [
+                "Developed and deployed 3 production-ready web apps using React and Node.js.",
+                "Contributed to the development of open-source libraries like [Library Name] on GitHub."
+            ],
+            status: "Active"
+        },
+        {
+            id: "skill-002",
+            name: "React",
+            category: "Frontend Framework",
+            level: "Advanced",
+            experienceYears: 3,
+            description: "I specialize in building dynamic, responsive UIs using React.js. I am experienced in state management with Redux, React Context API, and utilizing React hooks for reusable, efficient components. I focus on high performance and accessibility in all my React apps.",
+            useCases: [
+                "Built a real-time messaging app using React and Firebase.",
+                "Developed an e-commerce website with features like product search, user authentication, and shopping cart using React and Redux."
+            ],
+            technologies: ["React.js", "Redux", "React Router", "Styled Components", "Apollo GraphQL", "Jest", "Webpack"],
+            tools: ["VS Code", "React DevTools", "Redux DevTools", "npm", "Git", "GitHub"],
+            relatedProjects: [
+                {
+                    name: "Real-Time Messaging App",
+                    description: "A messaging platform built using React, Firebase, and Material UI, enabling users to chat in real-time.",
+                    link: "https://github.com/username/messaging-app"
+                },
+                {
+                    name: "E-commerce Store",
+                    description: "A React-based e-commerce platform with user authentication, product pages, and a shopping cart built using Redux.",
+                    link: "https://github.com/username/e-commerce-store"
+                }
+            ],
+            learningResources: [
+                "React Documentation",
+                "Fullstackopen (University of Helsinki)",
+                "React - The Complete Guide (incl Hooks, React Router, Redux) on Udemy"
+            ],
+            achievements: [
+                "Built a reusable component library to streamline development across multiple projects.",
+                "Optimized React application performance, reducing bundle size by 40% and improving load time."
+            ],
+            status: "Active"
+        },
+        {
+            id: "skill-003",
+            name: "MongoDB",
+            category: "Database",
+            level: "Intermediate",
+            experienceYears: 2,
+            description: "I am proficient in MongoDB for developing NoSQL databases, performing CRUD operations, designing schemas, and utilizing the aggregation pipeline for complex queries. I also work with Mongoose to simplify database interactions in Node.js applications.",
+            useCases: [
+                "Developed a backend for an e-commerce platform using MongoDB for product and user data management.",
+                "Used MongoDB to store and manage large sets of user-generated content in a social media app."
+            ],
+            technologies: ["MongoDB", "Mongoose", "Aggregation Framework", "NoSQL", "Atlas"],
+            tools: ["MongoDB Compass", "MongoDB Atlas", "Robo 3T"],
+            relatedProjects: [
+                {
+                    name: "E-commerce Backend",
+                    description: "A backend API built with Express and MongoDB to manage products, orders, and users for an online store.",
+                    link: "https://github.com/username/e-commerce-backend"
+                }
+            ],
+            learningResources: [
+                "MongoDB University (M001, M102)",
+                "The Definitive Guide to MongoDB"
+            ],
+            achievements: [
+                "Optimized MongoDB queries using indexing and aggregation for improved performance.",
+                "Designed a scalable schema for a real-time messaging platform using MongoDB."
+            ],
+            status: "Active"
+        },
+        {
+            id: "skill-004",
+            name: "Python",
+            category: "Programming Language",
+            level: "Intermediate",
+            experienceYears: 2,
+            description: "I have experience using Python for a variety of applications, including web development with Flask and Django, as well as data analysis using Pandas and NumPy. I use Python to automate tasks and build small utilities for personal projects.",
+            useCases: [
+                "Built a web application using Flask to manage personal finances and track expenses.",
+                "Created Python scripts to automate repetitive tasks and data collection from APIs."
+            ],
+            technologies: ["Flask", "Pandas", "NumPy", "Django", "Jupyter"],
+            tools: ["VS Code", "PyCharm", "Jupyter Notebook", "Postman"],
+            relatedProjects: [
+                {
+                    name: "Finance Tracker",
+                    description: "A Flask-based web application for tracking personal expenses and generating financial reports.",
+                    link: "https://github.com/username/finance-tracker"
+                }
+            ],
+            learningResources: [
+                "Python Crash Course by Eric Matthes",
+                "Real Python Tutorials",
+                "Flask Documentation"
+            ],
+            achievements: [
+                "Automated data collection from multiple APIs, saving 10+ hours of manual work each month.",
+                "Built a custom data analysis tool using Pandas that helped analyze large datasets efficiently."
+            ],
+            status: "Refining"
+        },
+        {
+            id: "skill-005",
+            name: "Git & GitHub",
+            category: "Version Control",
+            level: "Advanced",
+            experienceYears: 3,
+            description: "I am proficient with Git for version control and GitHub for managing repositories and collaboration. I have experience with branching, merging, and handling pull requests in a team environment.",
+            useCases: [
+                "Managed multiple branches for feature development and bug fixing in a collaborative environment.",
+                "Used GitHub to collaborate on open-source projects and manage version history for personal projects."
+            ],
+            technologies: ["Git", "GitHub", "GitLab", "Bitbucket"],
+            tools: ["Git CLI", "GitHub Desktop", "SourceTree"],
+            relatedProjects: [
+                {
+                    name: "Project Collaboration",
+                    description: "Contributed to an open-source project on GitHub, improving its documentation and adding new features.",
+                    link: "https://github.com/username/open-source-project"
+                }
+            ],
+            learningResources: [
+                "Pro Git by Scott Chacon and Ben Straub",
+                "GitHub Learning Lab"
+            ],
+            achievements: [
+                "Contributed to 5+ open-source projects on GitHub.",
+                "Set up continuous integration and automated deployments using GitHub Actions."
+            ],
+            status: "Active"
+        },
+        {
+            id: "skill-006",
+            name: "Communication",
+            category: "Soft Skills",
+            level: "Advanced",
+            experienceYears: 5,
+            description: "I possess strong verbal and written communication skills, honed through regular team collaboration, client interactions, and public speaking engagements at tech meetups and conferences.",
+            useCases: [
+                "Presented technical topics at several local meetups and webinars.",
+                "Collaborated with cross-functional teams to deliver project features and communicate technical requirements."
+            ],
+            tools: ["Slack", "Zoom", "Google Meet", "Microsoft Teams"],
+            achievements: [
+                "Delivered a talk at a local developer meetup on 'Best Practices in React Development'.",
+                "Successfully facilitated team meetings, ensuring smooth communication between remote team members."
+            ],
+            status: "Active"
+        },
+        {
+            id: "skill-007",
+            name: "Problem Solving",
+            category: "Soft Skills",
+            level: "Advanced",
+            experienceYears: 5,
+            description: "I excel at breaking down complex problems into manageable tasks and finding efficient solutions. I apply this skill to both coding challenges and real-world problems across different domains.",
+            useCases: [
+                "Resolved performance issues in a React application by refactoring inefficient code.",
+                "Optimized a MongoDB database query to handle large datasets more efficiently."
+            ],
+            technologies: ["Algorithm Design", "Data Structures", "Debugging"],
+            achievements: [
+                "Solved over 200 coding challenges on platforms like LeetCode and Codewars.",
+                "Designed an efficient sorting algorithm that improved performance by 30%."
+            ],
+            status: "Active"
+        },
+        {
+            id: "skill-008",
+            name: "HTML",
+            category: "Markup Language",
+            level: "Advanced",
+            experienceYears: 5,
+            description: "I am proficient in HTML5 for creating well-structured and semantic web pages. I follow accessibility best practices to ensure websites are usable by all.",
+            useCases: [
+                "Built fully responsive websites using HTML5, ensuring compatibility with all modern browsers.",
+                "Implemented SEO best practices to improve the search engine ranking of websites."
+            ],
+            technologies: ["HTML5", "Semantic HTML", "Accessibility", "SEO"],
+            status: "Active"
+        },
+        {
+            id: "skill-009",
+            name: "CSS",
+            category: "Styling Language",
+            level: "Advanced",
+            experienceYears: 5,
+            description: "Expert in styling web pages using CSS3, including Flexbox, Grid, and CSS animations. I ensure that websites are responsive and mobile-friendly.",
+            useCases: [
+                "Created custom CSS frameworks for projects to improve development speed and consistency.",
+                "Designed mobile-first layouts using CSS Grid and Flexbox."
+            ],
+            technologies: ["CSS3", "Flexbox", "Grid", "SASS", "Responsive Design", "Animations"],
+            status: "Active"
+        },
+        {
+            id: "skill-010",
+            name: "C++",
+            category: "Programming Language",
+            level: "Intermediate",
+            experienceYears: 3,
+            description: "I am proficient in C++ programming for object-oriented development, algorithmic problem-solving, and system-level programming.",
+            useCases: [
+                "Participated in competitive programming contests using C++ to solve algorithmic challenges.",
+                "Developed small utilities and command-line applications for personal use."
+            ],
+            technologies: ["C++", "Object-Oriented Programming", "Algorithms", "Data Structures"],
+            status: "Active"
+        }
+    ]
+};

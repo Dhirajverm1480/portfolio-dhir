@@ -1,7 +1,8 @@
 import Title from "../components/Title";
 import Image from '../assets/image3.jpg';
-import { educationData } from '../constants/data.js'
+import { educationData, hobbyData } from '../constants/data.js'
 import Education from "../components/Education.jsx";
+import Hobby from "../components/Hobby.jsx";
 
 const About = () => {
   console.log("Edu : ", educationData)
@@ -10,10 +11,10 @@ const About = () => {
     <div className="page-frame">
       {/* <Title title={'About'} /> */}
       <div className=" sm:flex justify-between items-center w-full">
-        <div className="sm:w-[50%] py-4">
+        <div className="sm:w-[50%] sm:py-4">
           <Title title={"About"} />
           <p className="py-5">
-            Hi, I’m Dev — a frontend developer with a passion for building
+            Hi, I’m Dhiraj — a frontend developer with a passion for building
             clean, responsive, and user-focused web applications. My journey
             into web development started with a simple curiosity about how
             websites are made, and it quickly grew into a full-time passion. I
@@ -26,23 +27,41 @@ const About = () => {
             Contact Me
           </button>
         </div>
-        <div className="sm:w-[50%] flex justify-center items-center">
+        <div className="sm:w-[50%] flex justify-center items-center py-4">
           <img src={Image} alt="" className="w-full sm:w-96" />
         </div>
       </div>
       <div className="w-full">
         <div className="py-4">
           <Title title={'Education'} />
-          <div className="sm:flex justify-between py-5">
+          <div className="sm:flex justify-between py-5 backdrop-blur-sm">
             <div className="sm:w-[25%]"></div>
             <div className="sm:w-[70%]">
               {
                 educationData.education.map((item) => (
                   <div key={item.id}>
-                    <Education title={item.title} institution={item.institution} start={item.timeline.start} end={item.timeline.end} duration={item.timeline.duration} />
+                    <Education title={item.title} institution={item.institution} start={item.timeline.start} end={item.timeline.end} duration={item.timeline.duration} description={item.description} />
                   </div>
                 ))
               }
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="w-full">
+        <div className="py-4">
+          <Title title={'Hobbies'} />
+          <div className="sm:flex justify-between py-5 backdrop-blur-sm">
+            <div className="sm:w-[20%]"></div>
+            <div className="flex flex-wrap justify-between sm:w-[80%]">
+              {
+                hobbyData.hobbies.map((item) => (
+                  <div key={item.id} className="sm:w-[30%]">
+                    <Hobby title={item.name} description={item.description} relatedSkill={item.relatedSkills} frequency={item.frequency} />
+                  </div>
+                ))
+              }
+              <div className="w-[30%]"></div>
             </div>
           </div>
         </div>
