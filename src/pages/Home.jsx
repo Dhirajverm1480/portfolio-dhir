@@ -36,7 +36,7 @@ const Home = () => {
   }, [])
 
   return (
-    <div className='page-frame flex items-end sm:items-center h-[90vh]'>
+    <div className='page-frame flex items-center h-[90vh]'>
       <div className=' flex flex-col gap-4'>
         <h2 id="hero-heading" className='text-[9vw] sm:text-[10vh]'>Hi, I'm <span>Dhiraj Verma.</span></h2>
         <h4 id="hero-subtitle" className='sm:text-xl'>Frontend Developer| HTML5, CSS3, JS, React.js Enthusiast</h4>
@@ -50,5 +50,6 @@ const Home = () => {
     </div>
   )
 }
+
 
 export default Home
