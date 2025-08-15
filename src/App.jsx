@@ -1,4 +1,4 @@
-import Image1 from "./assets/Image1.png";
+import Image1 from "./assets/image1.png";
 import { Routes, Route } from "react-router-dom";
 import { ScrollTrigger, SplitText } from "gsap/all";
 import Home from "./pages/Home";
