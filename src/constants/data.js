@@ -235,6 +235,8 @@ export const projectsData = {
                 "Handled 100+ concurrent video sessions with no major lags",
             ],
         },
+
+        // Dummy Project 05
         {
             id: "proj-005",
             title: "Fitness Tracker Mobile App",
@@ -249,14 +251,38 @@ export const projectsData = {
                 "CSV export of logs",
                 "Push notifications for reminders",
             ],
-            timeline: { start: "2025-02-01", end: "2025-03-15", duration: "6 weeks" },
+            images: {
+                thumbnail: "images/fitness-thumb.jpg",
+                full: "images/fitness-full.jpg",
+                mobile: "images/fitness-mobile.jpg",
+            },
+            links: {
+                live: "https://fitnessapp.com",
+                github: "https://github.com/yourusername/fitness-tracker-app",
+                caseStudy: "https://fitnessapp.com/case-study",
+            },
+            tags: ["mobile", "react-native", "firebase", "fitness", "health"],
+            timeline: {
+                start: "2025-02-01",
+                end: "2025-03-15",
+                duration: "6 weeks",
+            },
             status: "Completed",
             team: "Solo",
             role: "Full-Stack Mobile Developer",
-            achievements: ["5,000+ active users in Beta", "4.7 app rating in playtesters"],
+            responsibilities: [
+                "Designed and developed mobile app interface with React Native",
+                "Integrated Firebase for real-time user data storage and authentication",
+                "Built charts and graphs with Chart.js for progress tracking",
+                "Implemented push notifications for user reminders",
+            ],
+            achievements: [
+                "5,000+ active users in Beta",
+                "4.7 app rating in playtesters",
+            ],
         },
 
-        // Dummy Project 6
+        // Dummy Project 06
         {
             id: "proj-006",
             title: "Smart Home Dashboard",
@@ -271,14 +297,38 @@ export const projectsData = {
                 "User authentication",
                 "Mobile-friendly UI",
             ],
-            timeline: { start: "2025-05-20", end: "2025-07-01", duration: "6 weeks" },
+            images: {
+                thumbnail: "images/smart-home-thumb.jpg",
+                full: "images/smart-home-full.jpg",
+                mobile: "images/smart-home-mobile.jpg",
+            },
+            links: {
+                live: "https://smarthomedashboard.com",
+                github: "https://github.com/yourusername/smart-home-dashboard",
+                caseStudy: "https://smarthomedashboard.com/case-study",
+            },
+            tags: ["IoT", "angular", "mqtt", "smart-home", "dashboard"],
+            timeline: {
+                start: "2025-05-20",
+                end: "2025-07-01",
+                duration: "6 weeks",
+            },
             status: "In Progress",
             team: "2",
             role: "Front-End Engineer",
-            achievements: ["Real-time charts updating in <500ms", "Supports 20+ device types"],
+            responsibilities: [
+                "Developed user interface using Angular and D3.js for sensor data visualization",
+                "Implemented device control panel for smart home devices",
+                "Integrated real-time data syncing using MQTT",
+                "Collaborated with back-end team for API and authentication",
+            ],
+            achievements: [
+                "Real-time charts updating in <500ms",
+                "Supports 20+ device types",
+            ],
         },
 
-        // Dummy Project 7
+        // Dummy Project 07
         {
             id: "proj-007",
             title: "Language Learning Chatbot",
@@ -293,14 +343,38 @@ export const projectsData = {
                 "Speech-to-text and text-to-speech",
                 "User progress tracking",
             ],
-            timeline: { start: "2025-03-01", end: "2025-04-15", duration: "6 weeks" },
+            images: {
+                thumbnail: "images/language-chatbot-thumb.jpg",
+                full: "images/language-chatbot-full.jpg",
+                mobile: "images/language-chatbot-mobile.jpg",
+            },
+            links: {
+                live: "https://languagechatbot.com",
+                github: "https://github.com/yourusername/language-chatbot",
+                caseStudy: "https://languagechatbot.com/case-study",
+            },
+            tags: ["ai", "openai", "language-learning", "chatbot", "react", "typescript"],
+            timeline: {
+                start: "2025-03-01",
+                end: "2025-04-15",
+                duration: "6 weeks",
+            },
             status: "Completed",
             team: "3",
             role: "Full-Stack Developer",
-            achievements: ["Reduced language error rate by 30% in lab tests", "200+ daily active users during pilot"],
+            responsibilities: [
+                "Integrated OpenAI GPT-3 for language conversation and feedback",
+                "Built user dashboard to track progress and set goals",
+                "Developed interactive quizzes for learning vocabulary and grammar",
+                "Implemented speech-to-text and text-to-speech functionality",
+            ],
+            achievements: [
+                "Reduced language error rate by 30% in lab tests",
+                "200+ daily active users during pilot",
+            ],
         },
 
-        // Dummy Project 8
+        // Dummy Project 08
         {
             id: "proj-008",
             title: "Crowdsourced Survey Platform",
@@ -315,14 +389,38 @@ export const projectsData = {
                 "CSV and PDF export",
                 "User dashboards",
             ],
-            timeline: { start: "2025-01-10", end: "2025-02-28", duration: "7 weeks" },
+            images: {
+                thumbnail: "images/survey-platform-thumb.jpg",
+                full: "images/survey-platform-full.jpg",
+                mobile: "images/survey-platform-mobile.jpg",
+            },
+            links: {
+                live: "https://surveysplatform.com",
+                github: "https://github.com/yourusername/crowdsourced-survey-platform",
+                caseStudy: "https://surveysplatform.com/case-study",
+            },
+            tags: ["vue", "node", "mongodb", "survey", "real-time", "chart.js"],
+            timeline: {
+                start: "2025-01-10",
+                end: "2025-02-28",
+                duration: "7 weeks",
+            },
             status: "Completed",
             team: "4",
             role: "Lead Developer",
-            achievements: ["2400+ completed surveys in launch week", "Exported 120+ survey reports"],
+            responsibilities: [
+                "Led development of the survey builder and real-time analytics",
+                "Implemented branching logic and conditional survey flow",
+                "Integrated CSV and PDF export features",
+                "Built user dashboard for survey results and analysis",
+            ],
+            achievements: [
+                "2400+ completed surveys in launch week",
+                "Exported 120+ survey reports",
+            ],
         },
 
-        // Dummy Project 9
+        // Dummy Project 09
         {
             id: "proj-009",
             title: "Crypto Portfolio Tracker",
@@ -336,97 +434,220 @@ export const projectsData = {
                 "Portfolio distribution charts",
                 "Historical performance graphs",
             ],
-            timeline: { start: "2025-06-15", end: "2025-08-10", duration: "8 weeks" },
+            images: {
+                thumbnail: "images/crypto-portfolio-thumb.jpg",
+                full: "images/crypto-portfolio-full.jpg",
+                mobile: "images/crypto-portfolio-mobile.jpg",
+            },
+            links: {
+                live: "https://cryptotracker.com",
+                github: "https://github.com/yourusername/crypto-portfolio-tracker",
+                caseStudy: "https://cryptotracker.com/case-study",
+            },
+            tags: ["cryptocurrency", "react", "graphql", "node", "tailwind", "finance"],
+            timeline: {
+                start: "2025-06-15",
+                end: "2025-08-10",
+                duration: "8 weeks",
+            },
             status: "In Progress",
             team: "2",
             role: "Full-Stack Developer",
-            achievements: ["Real-time updates within <2 seconds", "Supports 50+ cryptocurrencies"],
+            responsibilities: [
+                "Developed front-end components for displaying portfolio and performance charts",
+                "Integrated GraphQL API to aggregate data from multiple exchanges",
+                "Built real-time alert system for price changes",
+                "Optimized for performance with Redis caching",
+            ],
+            achievements: [
+                "Real-time updates within <2 seconds",
+                "Supports 50+ cryptocurrencies",
+            ],
         },
 
         // Dummy Project 10
         {
             id: "proj-010",
-            title: "SaaS Analytics Dashboard",
-            subtitle: "Insights for startups and SMBs",
+            title: "E-commerce Recommendation Engine",
+            subtitle: "Personalized product suggestions for e-commerce stores",
             description:
-                "A multi-tenant dashboard platform that connects to Google Analytics, Stripe, and internal APIs to surface product performance, revenue trends, and user behavior.",
-            technologies: ["Next.js", "PostgreSQL", "Prisma", "Chart.js"],
+                "A machine learning-based recommendation engine that provides personalized product recommendations to users based on their browsing behavior and purchase history.",
+            technologies: ["Python", "TensorFlow", "Flask", "MongoDB", "Bootstrap"],
             features: [
-                "Dashboard with revenue and user analytics",
-                "API connectors for Google Analytics and Stripe",
-                "Custom date range filters",
-                "Role-based access control",
+                "Personalized product recommendations",
+                "Collaborative filtering algorithm",
+                "Real-time product suggestions",
+                "User behavior tracking",
+                "Admin dashboard for insights and analytics",
             ],
-            timeline: { start: "2025-04-01", end: "2025-05-15", duration: "6 weeks" },
+            images: {
+                thumbnail: "images/ecommerce-recommendation-thumb.jpg",
+                full: "images/ecommerce-recommendation-full.jpg",
+                mobile: "images/ecommerce-recommendation-mobile.jpg",
+            },
+            links: {
+                live: "https://ecommerce-recommendation.com",
+                github: "https://github.com/yourusername/ecommerce-recommendation-engine",
+                caseStudy: "https://ecommerce-recommendation.com/case-study",
+            },
+            tags: ["machine-learning", "python", "tensorflow", "e-commerce", "recommendations"],
+            timeline: {
+                start: "2025-04-01",
+                end: "2025-06-10",
+                duration: "9 weeks",
+            },
             status: "Completed",
             team: "3",
-            role: "Back-End Engineer",
-            achievements: ["Revenue analytics load in <1s", "Used by 5 startups in beta"],
+            role: "Data Scientist & Full-Stack Developer",
+            responsibilities: [
+                "Developed and trained recommendation algorithms using TensorFlow",
+                "Integrated recommendation system into the e-commerce platform using Flask",
+                "Created an admin dashboard to monitor performance and product suggestions",
+                "Implemented real-time tracking of user behavior and purchase data",
+            ],
+            achievements: [
+                "Increased average sales per user by 20%",
+                "Reduced bounce rate by 15% through personalized suggestions",
+            ],
         },
 
-        // Dummy Project 11
+        // Dummy Project 11 
         {
             id: "proj-011",
-            title: "Virtual Reality Tour App",
-            subtitle: "Immersive real-estate property viewing",
+            title: "Blockchain Voting System",
+            subtitle: "A secure, transparent online voting platform",
             description:
-                "A VR web-based application enabling virtual property tours with 360° views, hotspots, and voiceover narration. Built with Three.js, WebXR, and hosted on AWS.",
-            technologies: ["Three.js", "WebXR", "AWS S3", "A-Frame"],
+                "A decentralized online voting system using blockchain technology to ensure transparency and security. Voters can cast votes securely, with all data stored immutably on the blockchain.",
+            technologies: ["Ethereum", "Solidity", "React", "Node.js", "Web3.js"],
             features: [
-                "360° image rendering",
-                "Hotspot navigation",
-                "Audio narration guides",
-                "Responsive VR and non-VR mode",
+                "Secure voting with blockchain",
+                "Transparent and verifiable election results",
+                "Real-time vote counting",
+                "User authentication using digital wallets",
+                "Admin panel for election management",
             ],
-            timeline: { start: "2025-02-05", end: "2025-03-22", duration: "7 weeks" },
+            images: {
+                thumbnail: "images/blockchain-voting-thumb.jpg",
+                full: "images/blockchain-voting-full.jpg",
+                mobile: "images/blockchain-voting-mobile.jpg",
+            },
+            links: {
+                live: "https://blockchainvoting.com",
+                github: "https://github.com/yourusername/blockchain-voting-system",
+                caseStudy: "https://blockchainvoting.com/case-study",
+            },
+            tags: ["blockchain", "ethereum", "solidity", "voting", "web3"],
+            timeline: {
+                start: "2025-07-01",
+                end: "2025-09-15",
+                duration: "10 weeks",
+            },
             status: "Completed",
-            team: "2",
-            role: "Frontend Developer",
-            achievements: ["Demonstrated at 3 virtual open-house events", "0 latency in VR navigation"],
+            team: "4",
+            role: "Blockchain Developer & Front-End Engineer",
+            responsibilities: [
+                "Developed and deployed smart contracts on Ethereum blockchain",
+                "Built secure user authentication using MetaMask",
+                "Created the front-end interface using React and Web3.js",
+                "Implemented real-time vote counting and election management",
+            ],
+            achievements: [
+                "Successfully deployed 5 test elections with real-time voting",
+                "Ensured 100% transparency with blockchain data",
+            ],
         },
 
         // Dummy Project 12
         {
             id: "proj-012",
-            title: "Blockchain Voting Platform",
-            subtitle: "Secure and transparent voting system",
+            title: "AI-Powered Image Captioning",
+            subtitle: "Automatic image caption generation using deep learning",
             description:
-                "A decentralized voting solution using blockchain (Ethereum) to allow secure, auditable polls. With proof-of-vote, smart contract–based ballot issuance, and real-time result publication.",
-            technologies: ["Solidity", "React", "Web3.js", "Ganache", "Metamask"],
+                "An AI-based image captioning tool that generates descriptive captions for images using a combination of computer vision and natural language processing (NLP) models.",
+            technologies: ["Python", "TensorFlow", "Keras", "Flask", "OpenCV"],
             features: [
-                "Blockchain-based election recording",
-                "Voter authentication via wallet",
-                "Real-time vote tallying",
-                "Audit logs and immutable results",
+                "Automatic image caption generation",
+                "Supports multiple image formats",
+                "Real-time captioning using deep learning models",
+                "User interface to upload and receive captions",
+                "Customizable caption templates",
             ],
-            timeline: { start: "2025-05-10", end: "2025-07-05", duration: "8 weeks" },
-            status: "In Progress",
-            team: "3",
-            role: "Blockchain Engineer",
-            achievements: ["Simulated 10,000 votes with 100% integrity", "Verified audit logs in deployment"],
+            images: {
+                thumbnail: "images/image-captioning-thumb.jpg",
+                full: "images/image-captioning-full.jpg",
+                mobile: "images/image-captioning-mobile.jpg",
+            },
+            links: {
+                live: "https://imagecaptioning.com",
+                github: "https://github.com/yourusername/ai-image-captioning",
+                caseStudy: "https://imagecaptioning.com/case-study",
+            },
+            tags: ["ai", "computer-vision", "tensorflow", "nlp", "python", "image-captioning"],
+            timeline: {
+                start: "2025-05-15",
+                end: "2025-06-25",
+                duration: "6 weeks",
+            },
+            status: "Completed",
+            team: "2",
+            role: "AI Engineer & Full-Stack Developer",
+            responsibilities: [
+                "Developed and trained deep learning models for image captioning",
+                "Integrated the model into a Flask web application for real-time use",
+                "Optimized model performance using transfer learning techniques",
+                "Built a user-friendly interface for image upload and caption display",
+            ],
+            achievements: [
+                "Achieved 90% accuracy in caption generation",
+                "Integrated with 3rd-party image services like Unsplash",
+            ],
         },
 
         // Dummy Project 13
         {
             id: "proj-013",
-            title: "Personal Finance Manager",
-            subtitle: "Organize budgets, expenses, and savings",
+            title: "Real-Time Weather Dashboard",
+            subtitle: "Live weather updates and forecasts",
             description:
-                "A web app to manage personal financial health—budget tracking, expense categories, goal planning, and visual summaries. Incorporates Plaid API for bank account sync.",
-            technologies: ["React", "Node.js", "Plaid API", "Chart.js", "Auth0"],
+                "A real-time weather dashboard that fetches live weather data using APIs and displays current conditions, forecasts, and visualizations like temperature maps and storm tracking.",
+            technologies: ["React", "Node.js", "Weather API", "Chart.js", "Tailwind CSS"],
             features: [
-                "Expense and income tracking",
-                "Budget goal monitoring",
-                "Bank account syncing via Plaid",
-                "Charts for spending insights",
-                "Authentication with Auth0",
+                "Current weather display",
+                "Forecasts for the next 7 days",
+                "Real-time storm and radar tracking",
+                "Interactive weather maps",
+                "Geolocation-based weather updates",
             ],
-            timeline: { start: "2025-06-01", end: "2025-07-20", duration: "8 weeks" },
-            status: "In Progress",
-            team: "1",
+            images: {
+                thumbnail: "images/weather-dashboard-thumb.jpg",
+                full: "images/weather-dashboard-full.jpg",
+                mobile: "images/weather-dashboard-mobile.jpg",
+            },
+            links: {
+                live: "https://weatherdashboard.com",
+                github: "https://github.com/yourusername/weather-dashboard",
+                caseStudy: "https://weatherdashboard.com/case-study",
+            },
+            tags: ["weather", "react", "node", "charts", "real-time"],
+            timeline: {
+                start: "2025-06-05",
+                end: "2025-07-15",
+                duration: "6 weeks",
+            },
+            status: "Completed",
+            team: "2",
             role: "Full-Stack Developer",
-            achievements: ["Auto-imported 1,000+ transactions", "Identified 20% overspend categories in beta"],
-        },
+            responsibilities: [
+                "Built the front-end interface using React and Tailwind CSS",
+                "Integrated weather data APIs to fetch live weather updates",
+                "Developed interactive temperature and radar maps with Chart.js",
+                "Implemented geolocation feature for weather data based on user location",
+            ],
+            achievements: [
+                "Real-time weather data refresh every 30 seconds",
+                "Integrated with 4 weather APIs for redundancy",
+            ],
+        }
     ],
 };
 

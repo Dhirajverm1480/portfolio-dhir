@@ -1,12 +1,31 @@
 import { Link, NavLink } from "react-router-dom";
 import MenuImg from "../assets/icons/menu-left.png";
 import { useState } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const NavBar = () => {
+
+  useGSAP(() => {
+    const navTween = gsap.timeline({
+      scrollTrigger : {
+        trigger: 'header',
+        start: 'bottom top'
+      }
+    });
+
+    navTween.fromTo('nav', { backgroundColor : 'transparent'}, {
+      backgroundColor: '00000070',
+      backgroundFilter : 'blur(10px)',
+      duration: 1,
+      ease: 'power1.inOut'
+    })
+  })
+
   const [visible, setVisible] = useState(false);
 
   return (
-    <div className="sticky z-50 top-0 backdrop-blur-lg sm:backdrop-blur-0">
+    <header className="sticky z-50 top-0 backdrop-blur-lg sm:backdrop-blur-0">
       <nav className="w-full flex justify-between items-center p-3">
         <div className="flex items-center gap-10">
           <img
@@ -89,7 +108,7 @@ const NavBar = () => {
           </NavLink>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 

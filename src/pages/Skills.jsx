@@ -4,8 +4,10 @@ import Skill from '../components/Skill'
 import Title from '../components/Title'
 
 const Skills = () => {
+  
   return (
     <div className='page-frame'>
+      <div></div>
       {/* <Title title={'Skills'} /> */}
       <div className='w-full sm:flex flex-wrap justify-between backdrop-blur-sm'>
         {
@@ -16,6 +18,10 @@ const Skills = () => {
           ))
         }
       </div>
+
+      {/* <div>
+        <Title title={'Certification'} />
+      </div> */}
     </div>
   )
 }

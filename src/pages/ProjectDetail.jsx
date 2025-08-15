@@ -19,7 +19,8 @@ const ProjectDetail = () => {
     }
   }, [id]);
 
-  console.log('Project: ', project);
+  // console.log('Project: ', project);
+  // console.log('Res', project.responsibilities)
 
   if (!project) {
     return <div>Loading...</div>;
@@ -27,7 +28,7 @@ const ProjectDetail = () => {
 
   return (
     <div className='page-frame'>
-      <div className='sm:flex justify-between'>
+      <div className='sm:flex justify-between border-b'>
         <div className='sm:w-[30%] py-4'>
           <img src={Image1} alt={project.title} className='w-full h-96 sm:h-full' />
         </div>
@@ -51,6 +52,23 @@ const ProjectDetail = () => {
             <button className='btn border btn-hover'>Go Live</button>
           </div>
         </div>
+      </div>
+      {/* <hr /> */}
+      <div className='pb-2'>
+        { project.responsibilities? <h4 className='text-md text-gray-400 py-2'>Responsibilities :</h4> : ' ' }
+        {
+          project.responsibilities?.map((item) => (
+            <span className='text-sm py-1 px-1'> {item}.</span>
+          ))
+        }
+      </div>
+      <div className='pb-2'>
+        { project.achievements? <h4 className='text-md text-gray-400 py-2'>Achievements :</h4> : ' ' }
+        {
+          project.achievements?.map((item) => (
+            <span className='text-sm py-1 px-1'> {item}.</span>
+          ))
+        }
       </div>
     </div>
   )

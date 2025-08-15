@@ -31,6 +31,8 @@ const About = () => {
           <img src={Image} alt="" className="w-full sm:w-96" />
         </div>
       </div>
+
+      {/* Education */}
       <div className="w-full">
         <div className="py-4">
           <Title title={'Education'} />
@@ -48,6 +50,8 @@ const About = () => {
           </div>
         </div>
       </div>
+
+      {/* Hobbies */}
       <div className="w-full">
         <div className="py-4">
           <Title title={'Hobbies'} />
