@@ -39,10 +39,10 @@ const Contact = () => {
           <div className="my-4">
             <Title title={'Social'} />
             <div className="flex flex-wrap py-3">
-              <Link className="social-card">
+              <Link to='https://www.linkedin.com/in/dhirajverma-v1' className="social-card">
                 <span>Linkedin</span>
               </Link>
-              <Link className="social-card">
+              <Link to='https://github.com/Dhirajverm1480' className="social-card">
                 <span>GitHub</span>
               </Link>
               <Link className="social-card">

@@ -7,8 +7,8 @@ const Hobby = ({ title, description, frequency, relatedSkill }) => {
             <Title title={title} />
             <div className='flex flex-wrap justify-between py-2 text-gray-400'>
                 {
-                    relatedSkill.map((item) => (
-                        <span className='text-sm'>{item},</span>
+                    relatedSkill.map((item, index) => (
+                        <span key={index} className='text-sm'>{item},</span>
                     ))
                 }
             </div>

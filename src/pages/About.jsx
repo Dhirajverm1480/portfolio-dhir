@@ -3,17 +3,32 @@ import Image from '../assets/image3.jpg';
 import { educationData, hobbyData } from '../constants/data.js'
 import Education from "../components/Education.jsx";
 import Hobby from "../components/Hobby.jsx";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { SplitText } from "gsap/all";
 
 const About = () => {
-  console.log("Edu : ", educationData)
+
+  useGSAP(() => {
+    const aboutParaSplit = new SplitText('#about-para', {type: 'lines'})
+
+    gsap.from(aboutParaSplit.lines, {
+      opacity: 0,
+      xPercent: -100,
+      duration: 1.8,
+      ease: 'expo.out',
+      stagger: 0.06
+    })
+  }, [])
+  // console.log("Edu : ", educationData)
 
   return (
-    <div className="page-frame">
+    <section id="about" className="page-frame">
       {/* <Title title={'About'} /> */}
       <div className=" sm:flex justify-between items-center w-full">
         <div className="sm:w-[50%] sm:py-4">
           <Title title={"About"} />
-          <p className="py-5">
+          <p id="about-para" className="py-5">
             Hi, I’m Dhiraj — a frontend developer with a passion for building
             clean, responsive, and user-focused web applications. My journey
             into web development started with a simple curiosity about how
@@ -70,7 +85,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

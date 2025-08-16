@@ -28,8 +28,8 @@ export const projectsData = {
                 mobile: "images/portfolio-mobile.jpg",
             },
             links: {
-                live: "https://yourportfolio.com",
-                github: "https://github.com/yourusername/portfolio",
+                live: "https://portfolio-dhir.vercel.app",
+                github: "https://github.com/Dhirajverm1480/portfolio-dhir",
                 caseStudy: "https://yourportfolio.com/case-study/portfolio",
             },
             tags: [

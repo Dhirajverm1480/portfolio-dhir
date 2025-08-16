@@ -1,4 +1,3 @@
-import React from 'react'
 import Title from './Title'
 
 const Education = ({ title, institution, start, end, duration, description }) => {

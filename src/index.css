@@ -20,8 +20,12 @@ a.active {
   @apply w-full p-5
 }
 
+.flex-center {
+  @apply flex justify-center items-center
+}
+
 .btn {
-  @apply w-full sm:w-44 p-2 mt-4
+  @apply w-full sm:w-44 p-2 mt-4 text-lg
 }
 
 .btn-border{
