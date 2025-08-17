@@ -55,7 +55,7 @@ export const projectsData = {
                 "Implemented theme switching and page animations",
                 "Managed project data via structured JSON",
                 "Optimized for performance, SEO, and accessibility",
-                "Set up CI/CD and deployment on Netlify",
+                "Set up CI/CD and deployment on Vercel",
             ],
             achievements: [
                 "100/100 Lighthouse score in performance, accessibility, and SEO",

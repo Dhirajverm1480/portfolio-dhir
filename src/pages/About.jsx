@@ -19,14 +19,40 @@ const About = () => {
       ease: 'expo.out',
       stagger: 0.06
     })
+
+    gsap.from('#about-img', {
+      opacity: 0,
+      xPercent: 100,
+      duration: 1.6,
+      ease: 'expo.out'
+    })
+
+    gsap.from('#edu-div', {
+      opacity: 0,
+      xPercent: 100,
+      duration: 1.6,
+      ease: 'expo.out',
+      stagger: 0.06,
+      delay: 1,
+    })
+
+    gsap.from('#hobby-div', {
+      opacity: 0,
+      yPercent: 100,
+      duration: 1.8,
+      ease: 'expo.out',
+      stagger: 0.06,
+      delay: 1,
+    })
   }, [])
+  
   // console.log("Edu : ", educationData)
 
   return (
-    <section id="about" className="page-frame">
+    <section id="about" className="page-frame overflow-hidden">
       {/* <Title title={'About'} /> */}
       <div className=" sm:flex justify-between items-center w-full">
-        <div className="sm:w-[50%] sm:py-4">
+        <div className="md:w-[65%] lg:w-[50%] sm:py-4">
           <Title title={"About"} />
           <p id="about-para" className="py-5">
             Hi, I’m Dhiraj — a frontend developer with a passion for building
@@ -42,8 +68,8 @@ const About = () => {
             Contact Me
           </button>
         </div>
-        <div className="sm:w-[50%] flex justify-center items-center py-4">
-          <img src={Image} alt="" className="w-full sm:w-96" />
+        <div className="md:w-[30%] lg:w-[50%] flex justify-center items-center py-4">
+          <img id="about-img" src={Image} alt="" className="w-full sm:w-96" />
         </div>
       </div>
 
@@ -56,7 +82,7 @@ const About = () => {
             <div className="sm:w-[70%]">
               {
                 educationData.education.map((item) => (
-                  <div key={item.id}>
+                  <div id="edu-div" key={item.id}>
                     <Education title={item.title} institution={item.institution} start={item.timeline.start} end={item.timeline.end} duration={item.timeline.duration} description={item.description} />
                   </div>
                 ))
@@ -71,11 +97,11 @@ const About = () => {
         <div className="py-4">
           <Title title={'Hobbies'} />
           <div className="sm:flex justify-between py-5 backdrop-blur-sm">
-            <div className="sm:w-[20%]"></div>
-            <div className="flex flex-wrap justify-between sm:w-[80%]">
+            <div className="hidden lg:block lg:w-[20%]"></div>
+            <div className="flex flex-wrap justify-between lg:w-[80%]">
               {
                 hobbyData.hobbies.map((item) => (
-                  <div key={item.id} className="sm:w-[30%]">
+                  <div id="hobby-div" key={item.id} className="md:w-[45%] lg:w-[30%]">
                     <Hobby title={item.name} description={item.description} relatedSkill={item.relatedSkills} frequency={item.frequency} />
                   </div>
                 ))

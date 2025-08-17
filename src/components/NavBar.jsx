@@ -55,9 +55,9 @@ const NavBar = () => {
             <span>Contact</span>
           </NavLink>
         </ul>
-        <button className="p-2 bg-slate-400 text-white rounded-md shadow-lg">
+        <Link to={'/contact'} className="p-2 bg-slate-400 text-white rounded-md shadow-lg">
           Contact
-        </button>
+        </Link>
       </nav>
 
       <div

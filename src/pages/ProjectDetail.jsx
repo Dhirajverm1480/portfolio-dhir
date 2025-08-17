@@ -3,11 +3,14 @@ import { Link, useParams } from 'react-router-dom'
 import { projectsData } from '../constants/data.js';
 import Image1 from "../assets/image.png";
 import Title from '../components/Title.jsx';
+import ProjectCard from '../components/ProjectCard.jsx';
 
 const ProjectDetail = () => {
 
   const { id } = useParams();
   const [project, setProject] = useState(null);
+
+  const filterProject = projectsData.projects.filter(project => project.technologies.includes('React'))
 
   useEffect(() => {
     if (!id) return;
@@ -18,10 +21,8 @@ const ProjectDetail = () => {
     } else {
       console.error('Project not found');
     }
-  }, [id]);
 
-  // console.log('Project: ', project);
-  // console.log('Res', project.responsibilities)
+  }, [id]);
 
   if (!project) {
     return <div>Loading...</div>;
@@ -56,7 +57,7 @@ const ProjectDetail = () => {
       </div>
       {/* <hr /> */}
       <div className='pb-2'>
-        { project.responsibilities? <h4 className='text-md text-gray-400 py-2'>Responsibilities :</h4> : ' ' }
+        {project.responsibilities ? <h4 className='text-md text-gray-400 py-2'>Responsibilities :</h4> : ' '}
         {
           project.responsibilities?.map((item, index) => (
             <span key={index} className='text-sm py-1 px-1'> {item}.</span>
@@ -64,12 +65,27 @@ const ProjectDetail = () => {
         }
       </div>
       <div className='pb-2'>
-        { project.achievements? <h4 className='text-md text-gray-400 py-2'>Achievements :</h4> : ' ' }
+        {project.achievements ? <h4 className='text-md text-gray-400 py-2'>Achievements :</h4> : ' '}
         {
           project.achievements?.map((item, index) => (
             <span key={index} className='text-sm py-1 px-1'> {item}.</span>
           ))
         }
+      </div>
+      <div>
+        <Title title={'Related Project'} />
+        <div className="w-full md:flex sm:justify-start sm:flex-wrap p-2">
+          {filterProject.map((item) => (
+            <div key={item.id} className="md:w-[50%] lg:w-[30%] p-2">
+              <ProjectCard
+                id={item.id}
+                title={item.title}
+                subtitle={item.subtitle}
+                image={item.images?.thumbnail}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   )

@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div className="page-frame">
       {/* <Title title={"Contact"} /> */}
-      <div className="w-full lg:flex justify-between gap-2">
+      <div className="w-full lg:flex justify-between items-center gap-2">
         <div className="w-full lg:w-[40%] flex flex-col justify-between sm:px-6">
           <div>
             <Title title={"Contact"} />
