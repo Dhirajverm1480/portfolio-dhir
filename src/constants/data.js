@@ -8,10 +8,12 @@ export const projectsData = {
                 "A fully responsive and animated developer portfolio built with React and Vite, designed to reflect a modern frontend skillset. It includes smooth transitions using Framer Motion, theme toggling, and SEO optimization. All project content is managed via a JSON file, allowing for easy updates without modifying code. Styled using Styled-Components and deployed on Netlify, the site is optimized for performance and accessibility across devices.",
             technologies: [
                 "React",
-                "Framer Motion",
+                // "Framer Motion",
+                "Gsap",
                 "Styled-Components",
                 "Vite",
-                "Netlify",
+                // "Netlify",
+                "Vercel",
             ],
             features: [
                 "Dark/Light mode toggle with persistent preference",

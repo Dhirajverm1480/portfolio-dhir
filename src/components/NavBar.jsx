@@ -15,7 +15,8 @@ const NavBar = () => {
     });
 
     navTween.fromTo('#header', { backgroundColor : 'transparent'}, {
-      backgroundColor: '#00000090',
+      backgroundColor: '#000000ee',
+      // backgroundColor: '#00000090',
       // backgroundFilter : 'blur(10px)',
       duration: 1,
       ease: 'power1.inOut'
@@ -25,7 +26,7 @@ const NavBar = () => {
   const [visible, setVisible] = useState(false);
 
   return (
-    <header id='header' className="sticky z-50 top-0 backdrop-blur-lg sm:backdrop-blur-0">
+    <header id='header' className="sticky z-50 top-0 backdrop-blur-lg sm:backdrop-blur-0 px-3">
       <nav className="w-full flex justify-between items-center p-3">
         <div className="flex items-center gap-10">
           <img

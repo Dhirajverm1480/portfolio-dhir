@@ -10,11 +10,11 @@ const Skills = () => {
   useGSAP(() => {
     gsap.from('#skill-div', {
       opacity: 0,
-      yPercent: -100,
+      xPercent: -100,
       duration: 2.8,
       ease: 'expo.out',
       stagger: 0.08,
-      delay: 1,
+      // delay: 1,
     })
   }, [])
   

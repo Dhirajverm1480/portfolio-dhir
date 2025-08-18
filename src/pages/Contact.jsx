@@ -39,15 +39,15 @@ const Contact = () => {
           <div className="my-4">
             <Title title={'Social'} />
             <div className="flex flex-wrap py-3">
-              <Link to='https://www.linkedin.com/in/dhirajverma-v1' className="social-card">
+              <a href='https://www.linkedin.com/in/dhirajverma-v1' className="social-card">
                 <span>Linkedin</span>
-              </Link>
-              <Link to='https://github.com/Dhirajverm1480' className="social-card">
+              </a>
+              <a href='https://github.com/Dhirajverm1480' className="social-card">
                 <span>GitHub</span>
-              </Link>
-              <Link className="social-card">
+              </a>
+              <a href="#" className="social-card">
                 <span>FaceBook</span>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
