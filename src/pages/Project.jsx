@@ -22,11 +22,10 @@ const Project = () => {
 
   return (
     <div className="page-frame overflow-hidden">
-      {/* <div className="flex-center gap-2">
-        <button onClick={() => setSelectedTech('React')} className="btn border btn-hover flex-center" >All</button>
-        <button onClick={() => setSelectedTech('React')} className="btn border btn-hover flex-center" >React</button>
-        <button onClick={() => setSelectedTech('React')} className="btn border btn-hover flex-center" >JS</button>
-        <button onClick={() => setSelectedTech('React')} className="btn border btn-hover flex-center" >React</button>
+      {/* <div className="w-full md:flex sm:justify-center gap-2 sm:flex-wrap p-2">
+        <button onClick={() => setSelectedTech('React')} className="btn border btn-hover flex-center rounded-full" >All</button>
+        <button onClick={() => setSelectedTech('React')} className="btn border btn-hover flex-center rounded-full" >React</button>
+        <button onClick={() => setSelectedTech('React')} className="btn border btn-hover flex-center rounded-full" >JS</button>
       </div> */}
       <div className="w-full md:flex sm:justify-center sm:flex-wrap p-2">
         {projectsData.projects.map((item) => (
