@@ -1,57 +1,86 @@
 import Title from "../components/Title";
-import Image from '../assets/image3.jpg';
-import { educationData, hobbyData } from '../constants/data.js'
+import Image from "../assets/image3.jpg";
+import { educationData, hobbyData } from "../constants/data.js";
 import Education from "../components/Education.jsx";
 import Hobby from "../components/Hobby.jsx";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { SplitText } from "gsap/all";
+import { ScrollTrigger, SplitText } from "gsap/all";
 
 const About = () => {
-
   useGSAP(() => {
-    const aboutParaSplit = new SplitText('#about-para', {type: 'lines'})
+    const aboutParaSplit = new SplitText("#about-para", { type: "lines" });
 
     gsap.from(aboutParaSplit.lines, {
       opacity: 0,
       xPercent: -100,
       duration: 1.8,
-      ease: 'expo.out',
-      stagger: 0.06
-    })
-
-    gsap.from('#about-img', {
-      opacity: 0,
-      xPercent: 100,
-      duration: 1.6,
-      ease: 'expo.out'
-    })
-
-    gsap.from('#edu-div', {
-      opacity: 0,
-      xPercent: 100,
-      duration: 1.6,
-      ease: 'expo.out',
+      ease: "expo.out",
       stagger: 0.06,
-      delay: 1,
+    });
+
+    gsap.from("#about-img", {
+      opacity: 0,
+      xPercent: 100,
+      duration: 1.6,
+      ease: "expo.out",
+    });
+
+    ScrollTrigger.create({
+      trigger: '#education',
+      start: 'top 50%',
+      onEnter: () => {
+        gsap.from("#edu-div", {
+          opacity: 0,
+          xPercent: 100,
+          duration: 1.6,
+          ease: 'expo.out',
+          delay: 0.6,
+        })
+      },
+      // markers: true,
     })
 
-    gsap.from('#hobby-div', {
+    ScrollTrigger.create({
+      trigger: '#education',
+      start: 'bottom bottom',
+      onEnter: () => {
+        gsap.from("#hobby-div", {
+          opacity: 0,
+          xPercent: 100,
+          duration: 1.6,
+          ease: 'expo.out',
+          delay: 0.8,
+        })
+      },
+      // markers: true,
+    })
+
+    gsap.from("#edu-div", {
+      opacity: 0,
+      xPercent: 100,
+      duration: 1.6,
+      ease: "expo.out",
+      stagger: 0.06,
+      delay: 0.6,
+    });
+
+    gsap.from("#hobby-div", {
       opacity: 0,
       yPercent: 100,
       duration: 1.8,
-      ease: 'expo.out',
+      ease: "expo.out",
       stagger: 0.06,
       delay: 1,
-    })
-  }, [])
-  
+    });
+  }, []);
+
   // console.log("Edu : ", educationData)
 
   return (
-    <section id="about" className="page-frame overflow-hidden">
+    <section id="about-section" className="page-frame overflow-hidden">
       {/* <Title title={'About'} /> */}
-      <div className=" sm:flex justify-between items-center w-full">
+      <div id="about" className=" sm:flex justify-between items-center w-full">
         <div className="md:w-[65%] lg:w-[50%] sm:py-4">
           <Title title={"About"} />
           <p id="about-para" className="py-5">
@@ -74,38 +103,50 @@ const About = () => {
       </div>
 
       {/* Education */}
-      <div className="w-full">
+      <div id="education" className="w-full">
         <div className="py-4">
-          <Title title={'Education'} />
+          <Title title={"Education"} />
           <div className="sm:flex justify-between py-5 backdrop-blur-sm">
             <div className="sm:w-[25%]"></div>
             <div className="sm:w-[70%]">
-              {
-                educationData.education.map((item) => (
-                  <div id="edu-div" key={item.id}>
-                    <Education title={item.title} institution={item.institution} start={item.timeline.start} end={item.timeline.end} duration={item.timeline.duration} description={item.description} />
-                  </div>
-                ))
-              }
+              {educationData.education.map((item) => (
+                <div id="edu-div" key={item.id}>
+                  <Education
+                    title={item.title}
+                    institution={item.institution}
+                    start={item.timeline.start}
+                    end={item.timeline.end}
+                    duration={item.timeline.duration}
+                    description={item.description}
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </div>
 
       {/* Hobbies */}
-      <div className="w-full">
+      <div id="hobby" className="w-full">
         <div className="py-4">
-          <Title title={'Hobbies'} />
+          <Title title={"Hobbies"} />
           <div className="sm:flex justify-between py-5 backdrop-blur-sm">
             <div className="hidden lg:block lg:w-[20%]"></div>
             <div className="flex flex-wrap justify-between lg:w-[80%]">
-              {
-                hobbyData.hobbies.map((item) => (
-                  <div id="hobby-div" key={item.id} className="md:w-[45%] lg:w-[30%]">
-                    <Hobby title={item.name} description={item.description} relatedSkill={item.relatedSkills} frequency={item.frequency} />
-                  </div>
-                ))
-              }
+              {hobbyData.hobbies.map((item) => (
+                <div
+                  id="hobby-div"
+                  key={item.id}
+                  className="md:w-[45%] lg:w-[30%]"
+                >
+                  <Hobby
+                    title={item.name}
+                    description={item.description}
+                    relatedSkill={item.relatedSkills}
+                    frequency={item.frequency}
+                  />
+                </div>
+              ))}
               <div className="w-[30%]"></div>
             </div>
           </div>
