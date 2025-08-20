@@ -43,7 +43,7 @@ const Home = () => {
         <h4 id="hero-subtitle" className='sm:text-xl'>Frontend Developer| HTML5, CSS3, JS, React.js Enthusiast</h4>
         <p id="hero-para" className='sm:text-8'>I create seamless, interactive web experiences that bring your ideas to life.</p>
         <div className="flex gap-3">
-          <Link to={'/'} className='bg-red-400 btn flex-center'>Download CV</Link>
+          <a href='../../public/Dhir-Favi.png' className='bg-red-400 btn flex-center'>Download CV</a >
           <Link to={'/contact'} className='btn border btn-hover flex-center'>Contact Me</Link>
         </div>
       </div>
