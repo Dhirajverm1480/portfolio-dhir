@@ -23,13 +23,13 @@ const Project = () => {
   return (
     <div className="page-frame overflow-hidden">
       {/* <div className="w-full md:flex sm:justify-center gap-2 sm:flex-wrap p-2">
-        <button onClick={() => setSelectedTech('React')} className="btn border btn-hover flex-center rounded-full" >All</button>
+        <button onClick={() => setSelectedTech('All')} className="btn border btn-hover flex-center rounded-full" >All</button>
         <button onClick={() => setSelectedTech('React')} className="btn border btn-hover flex-center rounded-full" >React</button>
-        <button onClick={() => setSelectedTech('React')} className="btn border btn-hover flex-center rounded-full" >JS</button>
+        <button onClick={() => setSelectedTech('JS')} className="btn border btn-hover flex-center rounded-full" >JS</button>
       </div> */}
-      <div className="w-full md:flex sm:justify-center sm:flex-wrap p-2">
+      <div className="w-full md:flex sm:justify-start sm:flex-wrap p-2">
         {projectsData.projects.map((item) => (
-          <div id="projectCard" key={item.id} className="md:w-[50%] lg:w-[30%] p-2">
+          <div id="projectCard" key={item.id} className="md:w-[50%] lg:w-[33%] p-2">
             <ProjectCard
               id={item.id}
               title={item.title}
@@ -39,7 +39,7 @@ const Project = () => {
           </div>
         ))}
       </div>
-      {/* <div className="w-full md:flex sm:justify-center sm:flex-wrap p-2">
+      {/* <div className="w-full md:flex sm:justify- sm:flex-wrap p-2">
         {filterProject.map((item) => (
           <div id="projectCard" key={item.id} className="md:w-[50%] lg:w-[30%] p-2">
             <ProjectCard

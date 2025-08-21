@@ -80,7 +80,7 @@ const About = () => {
   return (
     <section id="about-section" className="page-frame overflow-hidden">
       {/* <Title title={'About'} /> */}
-      <div id="about" className=" sm:flex justify-between items-center w-full">
+      <div id="about" className="md:h-[70vh] lg:h-full sm:flex justify-between items-center w-full">
         <div className="md:w-[65%] lg:w-[50%] sm:py-4">
           <Title title={"About"} />
           <p id="about-para" className="py-5">
