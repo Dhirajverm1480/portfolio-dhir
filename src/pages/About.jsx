@@ -62,7 +62,7 @@ const About = () => {
       duration: 1.6,
       ease: "expo.out",
       stagger: 0.06,
-      delay: 0.6,
+      delay: 1,
     });
 
     gsap.from("#hobby-div", {
