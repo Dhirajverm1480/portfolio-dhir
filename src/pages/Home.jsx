@@ -37,8 +37,8 @@ const Home = () => {
   }, [])
 
   return (
-    <div className='page-frame flex items-center h-[80vh] sm:h-[93vh] lg:h-[90vh]'>
-      <div className=' flex flex-col gap-4'>
+    <div className='page-frame flex items-center h-[calc(100vh-130px)] sm:h-[calc(100vh-64px)] lg:h-[calc(100vh-64px)]'>
+      <div className='w-full flex flex-col gap-4'>
         <h2 id="hero-heading" className='text-[9vw] lg:text-[5vw]'>Hi, I'm <span>Dhiraj Verma.</span></h2>
         <h4 id="hero-subtitle" className='sm:text-xl'>Frontend Developer| HTML5, CSS3, JS, React.js Enthusiast</h4>
         <p id="hero-para" className='sm:text-8'>I create seamless, interactive web experiences that bring your ideas to life.</p>

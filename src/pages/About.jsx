@@ -80,8 +80,8 @@ const About = () => {
   return (
     <section id="about-section" className="page-frame overflow-hidden">
       {/* <Title title={'About'} /> */}
-      <div id="about" className="md:h-[70vh] lg:h-full sm:flex justify-between items-center w-full">
-        <div className="md:w-[65%] lg:w-[50%] sm:py-4">
+      <div id="about" className="md:h-[calc(100vh-64px)] md:flex justify-between items-center w-full">
+        <div className="w-full md:w-[65%] lg:w-[50%] sm:py-4">
           <Title title={"About"} />
           <p id="about-para" className="py-5">
             Hi, I’m Dhiraj — a frontend developer with a passion for building
@@ -97,8 +97,8 @@ const About = () => {
             Contact Me
           </button>
         </div>
-        <div className="md:w-[30%] lg:w-[50%] flex justify-center items-center py-4">
-          <img id="about-img" src={Image} alt="" className="w-full sm:w-96" />
+        <div className=" md:w-[30%] lg:w-[50%] flex justify-center items-center py-4">
+          <img id="about-img" src={Image} alt="" className="w-full  md:w-96" />
         </div>
       </div>
 
