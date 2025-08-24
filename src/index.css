@@ -22,7 +22,7 @@ a.active {
 }
 
 .page-frame{
-  @apply w-full p-5
+  @apply w-full p-5 mb-14 sm:mb-0
 }
 
 .flex-center {

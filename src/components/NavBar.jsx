@@ -33,7 +33,7 @@ const NavBar = () => {
             onClick={() => setVisible(true)}
             src={MenuImg}
             alt=""
-            className="sm:hidden cursor-pointer"
+            className="hidden cursor-pointer"
           />
           <Link to="/" className="text-2xl font-sans">
             Dhiraj Verma.

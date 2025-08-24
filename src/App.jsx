@@ -7,8 +7,9 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Project from "./pages/Project";
 import Skills from "./pages/Skills";
-import ProjectDetail from './pages/ProjectDetail'
+import ProjectDetail from "./pages/ProjectDetail";
 import gsap from "gsap";
+import BottomNav from "./components/BottomNav";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
+      <BottomNav />
     </div>
   );
 };
