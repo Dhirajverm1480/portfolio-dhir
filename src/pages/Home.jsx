@@ -2,6 +2,8 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/all";
 import { Link } from "react-router-dom";
+import Resume from '../assets/files/Dhiraj_verma_Resume.pdf'
+
 
 const Home = () => {
 
@@ -43,7 +45,7 @@ const Home = () => {
         <h4 id="hero-subtitle" className='sm:text-xl'>Frontend Developer| HTML5, CSS3, JS, React.js Enthusiast</h4>
         <p id="hero-para" className='sm:text-8'>I create seamless, interactive web experiences that bring your ideas to life.</p>
         <div className="flex gap-3">
-          <a href='../assets/Dhiraj_verma_Resume.pdf' className='bg-red-400 btn flex-center'>Download CV</a >
+          <a href={Resume} className='bg-red-400 btn flex-center' target="_blank" >Download CV</a >
           <Link to={'/contact'} className='btn border btn-hover flex-center'>Contact Me</Link>
         </div>
       </div>
