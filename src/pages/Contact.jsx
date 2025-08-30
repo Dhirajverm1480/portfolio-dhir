@@ -39,13 +39,13 @@ const Contact = () => {
           <div className="my-4">
             <Title title={'Social'} />
             <div className="flex flex-wrap py-3">
-              <a href='https://www.linkedin.com/in/dhirajverma-v1' className="social-card">
+              <a href='https://www.linkedin.com/in/dhirajverma-v1' className="social-card" target="_blank">
                 <span>Linkedin</span>
               </a>
-              <a href='https://github.com/Dhirajverm1480' className="social-card">
+              <a href='https://github.com/Dhirajverm1480' className="social-card" target="_blank">
                 <span>GitHub</span>
               </a>
-              <a href="#" className="social-card">
+              <a href="#" className="social-card" target="_blank">
                 <span>FaceBook</span>
               </a>
             </div>
@@ -94,3 +94,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
