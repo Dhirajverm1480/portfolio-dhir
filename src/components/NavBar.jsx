@@ -11,6 +11,7 @@ const NavBar = () => {
       scrollTrigger : {
         trigger: '#header',
         start: 'bottom top',
+        // markers: true
       }
     });
 

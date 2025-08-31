@@ -48,7 +48,7 @@ const ProjectDetail = () => {
     })
   }, [project])
 
-  const filterProject = projectsData.projects.filter(project => project.technologies.includes('React'))
+  const filterProject = projectsData.projects.filter(project => project.technologies.includes('React') && project.id !== id)
 
   useEffect(() => {
     if (!id) return;
@@ -70,7 +70,7 @@ const ProjectDetail = () => {
     <div className='page-frame overflow-hidden'>
       <div className='lg:flex justify-between border-b'>
         <div ref={imgRef} className='lg:w-[30%] py-4'>
-          <img src={Image1} alt={project.title} className='w-full h-96 lg:h-full' />
+          <img src={project.image?.thumbnail || Image1} alt={project.title} className='w-full h-96 lg:h-full' />
         </div>
         <div className='lg:w-[60%]'>
           <Title title={project.title} />
@@ -88,8 +88,8 @@ const ProjectDetail = () => {
             }
           </div>
           <div className='flex gap-3 py-2'>
-            <Link to={project.links.github} className='btn border btn-hover flex-center'>Github Repo</Link>
-            <Link to={project.links.live} className='btn border btn-hover flex-center'>Go Live</Link>
+            <a href={project.links.github} className='btn border btn-hover flex-center' target='_blank'>Github Repo</a>
+            <a href={project.links.live} className='btn border btn-hover flex-center' target='_blank'>Go Live</a>
           </div>
         </div>
       </div>
