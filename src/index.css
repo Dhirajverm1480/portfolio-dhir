@@ -48,3 +48,17 @@ a.active {
 .social-card {
   @apply w-20 h-20 flex justify-center items-center rounded-lg border p-2 m-2 cursor-pointer sm:backdrop-blur-md hover:bg-white hover:text-black
 }
+
+/* Bottom Navigation */
+
+.nav-link{
+  @apply flex flex-col items-center
+}
+
+.bottom-navigation{
+  @apply fixed -bottom-1 w-full backdrop-blur-lg px-5 py-3 rounded-t-3xl sm:hidden
+}
+
+.nav-img-icon{
+  @apply w-6
+}
