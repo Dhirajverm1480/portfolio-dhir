@@ -195,6 +195,76 @@ export const projectsData = {
         "Enabled non-devs to manage content via Sanity within a week",
       ],
     },
+    {
+      id: "proj-004",
+      title: "WalMart E-Commerce Clone",
+      subtitle: "Headless CMS-powered shopping platform",
+      description:
+        "A full-featured e-commerce platform using HTML5, CSS3 and JS. It supports real-time product management, secure Stripe payments, responsive design, and user-friendly checkout flow. The admin panel allows non-developers to update product content, while the frontend is optimized for performance and deployed via Vercel’s edge network.",
+      technologies: [
+        // "React.js",
+        "Html5",
+        "CSS3",
+        "JS",
+        "GitHub",
+        // "Sanity.io",
+        // "Stripe",
+        // "Tailwind CSS",
+        // "Express",
+        // "Node.js",
+        // "MongoDB",
+        // "Vercel",
+
+      ],
+      features: [
+        // "Real-time product updates with Sanity CMS and GROQ queries",
+        // "Stripe integration for secure checkout",
+        "Category filtering, search, and responsive product pages",
+        "Server-side rendering and ISR for optimal performance",
+        "Persistent cart with local storage",
+        // "Custom admin-friendly CMS interface",
+        "CI/CD deployment on Vercel with preview environments",
+      ],
+      images: {
+        thumbnail: "images/ecommerce-thumb.jpg",
+        full: "images/ecommerce-full.jpg",
+        mobile: "images/ecommerce-mobile.jpg",
+      },
+      links: {
+        live: "https://store.yourdomain.com",
+        github: "https://github.com/yourusername/ecommerce-store",
+      },
+      tags: [
+        "fullstack",
+        "nextjs",
+        "ecommerce",
+        "headless-cms",
+        // "stripe",
+        "tailwind",
+        // "sanity",
+      ],
+      timeline: {
+        start: "2025-01-15",
+        end: "2025-03-01",
+        duration: "6 weeks",
+      },
+      status: "Active",
+      team: "Solo Developers",
+      role: "Full-Stack Developer",
+      responsibilities: [
+        "Developed SSR/ISR-enabled frontend using Next.js",
+        "Created UI components using Tailwind CSS",
+        "Integrated Stripe API for payments and webhooks",
+        "Set up Sanity Studio for real-time CMS control",
+        "Built cart management logic using React Context API",
+        "Configured Vercel for environment-specific deployments",
+      ],
+      achievements: [
+        "Processed $10,000+ in demo sales during testing phase",
+        "Improved page performance by 40% post-optimization",
+        "Enabled non-devs to manage content via Sanity within a week",
+      ],
+    },
 
     // Dummy Project 1
     // {
@@ -980,13 +1050,13 @@ export const internshipData = {
     {
       id: "intern-001",
       title: "Frontend Developer Intern",
-      company: "TechNova Solutions",
-      location: "Bangalore, India",
-      type: "Remote",
+      company: "Delhi Transco Limited",
+      location: "New Delhi, India",
+      type: "On Site",
       status: "Completed",
       timeline: {
-        start: "01-06-2024",
-        end: "31-08-2024",
+        start: "01-06-2025",
+        end: "31-08-2025",
         duration: "3 months",
       },
       description:
@@ -1004,39 +1074,39 @@ export const internshipData = {
         "CSS3",
         "Tailwind CSS",
         "Git",
-        "REST APIs",
+        // "REST APIs",
       ],
       achievements: [
         "Optimized page load speed by 30% by implementing lazy loading.",
         "Received appreciation from the team lead for delivering UI revamp ahead of schedule.",
       ],
     },
-    {
-      id: "intern-002",
-      title: "Software Engineering Intern",
-      company: "CodeSpark Pvt. Ltd.",
-      location: "Delhi, India",
-      type: "Onsite",
-      status: "Completed",
-      timeline: {
-        start: "01-01-2024",
-        end: "31-03-2024",
-        duration: "3 months",
-      },
-      description:
-        "Assisted in backend development and testing for a SaaS product. Worked on debugging and writing automation scripts.",
-      responsibilities: [
-        "Contributed to backend services built with Node.js and Express.",
-        "Wrote unit tests using Jest and conducted code reviews.",
-        "Created documentation for APIs and internal tools.",
-        "Collaborated with DevOps team for CI/CD automation tasks.",
-      ],
-      technologies: ["Node.js", "Express", "MongoDB", "Jest", "GitLab CI/CD"],
-      achievements: [
-        "Reduced build deployment errors by 40% through automation scripts.",
-        "Completed internal bug-fix sprint with 100% issue resolution.",
-      ],
-    },
+    // {
+    //   id: "intern-002",
+    //   title: "Software Engineering Intern",
+    //   company: "CodeSpark Pvt. Ltd.",
+    //   location: "Delhi, India",
+    //   type: "Onsite",
+    //   status: "Completed",
+    //   timeline: {
+    //     start: "01-01-2024",
+    //     end: "31-03-2024",
+    //     duration: "3 months",
+    //   },
+    //   description:
+    //     "Assisted in backend development and testing for a SaaS product. Worked on debugging and writing automation scripts.",
+    //   responsibilities: [
+    //     "Contributed to backend services built with Node.js and Express.",
+    //     "Wrote unit tests using Jest and conducted code reviews.",
+    //     "Created documentation for APIs and internal tools.",
+    //     "Collaborated with DevOps team for CI/CD automation tasks.",
+    //   ],
+    //   technologies: ["Node.js", "Express", "MongoDB", "Jest", "GitLab CI/CD"],
+    //   achievements: [
+    //     "Reduced build deployment errors by 40% through automation scripts.",
+    //     "Completed internal bug-fix sprint with 100% issue resolution.",
+    //   ],
+    // },
   ],
 };
 
@@ -1228,39 +1298,39 @@ export const skillData = {
       ],
       status: "Active",
     },
-    {
-      id: "skill-004",
-      name: "Python",
-      category: "Programming Language",
-      level: "Intermediate",
-      experienceYears: 2,
-      description:
-        "I have experience using Python for a variety of applications, including web development with Flask and Django, as well as data analysis using Pandas and NumPy. I use Python to automate tasks and build small utilities for personal projects.",
-      useCases: [
-        "Built a web application using Flask to manage personal finances and track expenses.",
-        "Created Python scripts to automate repetitive tasks and data collection from APIs.",
-      ],
-      technologies: ["Flask", "Pandas", "NumPy", "Django", "Jupyter"],
-      tools: ["VS Code", "PyCharm", "Jupyter Notebook", "Postman"],
-      relatedProjects: [
-        {
-          name: "Finance Tracker",
-          description:
-            "A Flask-based web application for tracking personal expenses and generating financial reports.",
-          link: "https://github.com/username/finance-tracker",
-        },
-      ],
-      learningResources: [
-        "Python Crash Course by Eric Matthes",
-        "Real Python Tutorials",
-        "Flask Documentation",
-      ],
-      achievements: [
-        "Automated data collection from multiple APIs, saving 10+ hours of manual work each month.",
-        "Built a custom data analysis tool using Pandas that helped analyze large datasets efficiently.",
-      ],
-      status: "Refining",
-    },
+    // {
+    //   id: "skill-004",
+    //   name: "Python",
+    //   category: "Programming Language",
+    //   level: "Intermediate",
+    //   experienceYears: 2,
+    //   description:
+    //     "I have experience using Python for a variety of applications, including web development with Flask and Django, as well as data analysis using Pandas and NumPy. I use Python to automate tasks and build small utilities for personal projects.",
+    //   useCases: [
+    //     "Built a web application using Flask to manage personal finances and track expenses.",
+    //     "Created Python scripts to automate repetitive tasks and data collection from APIs.",
+    //   ],
+    //   technologies: ["Flask", "Pandas", "NumPy", "Django", "Jupyter"],
+    //   tools: ["VS Code", "PyCharm", "Jupyter Notebook", "Postman"],
+    //   relatedProjects: [
+    //     {
+    //       name: "Finance Tracker",
+    //       description:
+    //         "A Flask-based web application for tracking personal expenses and generating financial reports.",
+    //       link: "https://github.com/username/finance-tracker",
+    //     },
+    //   ],
+    //   learningResources: [
+    //     "Python Crash Course by Eric Matthes",
+    //     "Real Python Tutorials",
+    //     "Flask Documentation",
+    //   ],
+    //   achievements: [
+    //     "Automated data collection from multiple APIs, saving 10+ hours of manual work each month.",
+    //     "Built a custom data analysis tool using Pandas that helped analyze large datasets efficiently.",
+    //   ],
+    //   status: "Refining",
+    // },
     {
       id: "skill-005",
       name: "Git & GitHub",
@@ -1343,7 +1413,12 @@ export const skillData = {
         "Built fully responsive websites using HTML5, ensuring compatibility with all modern browsers.",
         "Implemented SEO best practices to improve the search engine ranking of websites.",
       ],
-      technologies: ["HTML5", "Semantic HTML", "Accessibility", "SEO"],
+      technologies: [
+        "HTML5",
+        "Semantic HTML",
+        "Accessibility",
+        // "SEO"
+      ],
       status: "Active",
     },
     {
@@ -1362,7 +1437,7 @@ export const skillData = {
         "CSS3",
         "Flexbox",
         "Grid",
-        "SASS",
+        // "SASS",
         "Responsive Design",
         "Animations",
       ],
@@ -1383,8 +1458,8 @@ export const skillData = {
       technologies: [
         "C++",
         "Object-Oriented Programming",
-        "Algorithms",
-        "Data Structures",
+        // "Algorithms",
+        // "Data Structures",
       ],
       status: "Active",
     },
