@@ -13,6 +13,9 @@ import BottomNav from "./components/BottomNav";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
+export const backendUrl ="https://dhiraj-portfolio-backend.vercel.app"
+// export const backendUrl = import.meta.env.VITE_BACKEND_URL;
+
 const App = () => {
   return (
     <div
