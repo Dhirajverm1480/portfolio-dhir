@@ -13,26 +13,51 @@ const Contact = () => {
   const [senderPhone, setSenderPhone] = useState("");
   const [senderMessage, setSenderMessage] = useState("");
 
-  const onSubminHandling = async (e) => {
+  const onSubmitHandling = async (e) => {
     try {
-      e.preventDefault()
-      const formData = new FormData();
+      e.preventDefault();
+      // const formData = new FormData();
 
-      formData.append("senderName", senderName);
-      formData.append("senderEmail", senderEmail);
-      formData.append("senderPhone", senderPhone);
-      formData.append("senderMessage", senderMessage);
+      // formData.append("senderName", senderName);
+      // formData.append("senderEmail", senderEmail);
+      // formData.append("senderPhone", senderPhone);
+      // formData.append("senderMessage", senderMessage);
+
+      // This only used when you want to post the file on your backend if not you only push json data just like written in below
+
+      const formData = {
+        senderName,
+        senderEmail,
+        senderPhone,
+        senderMessage,
+      };
 
       const response = await axios.post(
-        backendUrl + "/api/v1/senders/addSender"
+        backendUrl + "/api/v1/senders/addSender",
+        formData,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
       );
       if (response.data.success) {
         console.log("Response Success: ", response.data.success);
+        alert("Thank you very much for contact us"||  response.data.sucess);
+
+        // Clear form
+        setSenderName("");
+        setSenderEmail("");
+        setSenderPhone("");
+        setSenderMessage("");
       }
-      alert("Thank you very much for contact us.")
+      alert("Thank you very much for contact us.");
     } catch (error) {
       console.error("Sender Error:", error.response?.data || error.message);
-      alert(error.response?.data?.message || "Failed to submit the post Sender Message.");
+      alert(
+        error.response?.data?.message ||
+          "Failed to submit the post Sender Message."
+      );
     }
   };
 
@@ -74,6 +99,7 @@ const Contact = () => {
                 href="https://www.linkedin.com/in/dhirajverma-v1"
                 className="social-card"
                 target="_blank"
+                rel="noreferrer"
               >
                 <span>Linkedin</span>
               </a>
@@ -81,10 +107,16 @@ const Contact = () => {
                 href="https://github.com/Dhirajverm1480"
                 className="social-card"
                 target="_blank"
+                rel="noreferrer"
               >
                 <span>GitHub</span>
               </a>
-              <a href="#" className="social-card" target="_blank">
+              <a
+                href="#"
+                className="social-card"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <span>FaceBook</span>
               </a>
             </div>
@@ -92,7 +124,7 @@ const Contact = () => {
         </div>
         <div className="w-full h-full lg:w-[50%] flex justify-center">
           <form
-            onSubmit={onSubminHandling}
+            onSubmit={onSubmitHandling}
             // action=""
             className="px-5 pb-4 w-full lg:w-[60%] border backdrop-blur-md rounded-md"
           >
@@ -117,7 +149,7 @@ const Contact = () => {
               <input
                 onChange={(e) => setSenderPhone(e.target.value)}
                 value={senderPhone}
-                type="number"
+                type="tel"
                 placeholder="Enter your Phone Number"
                 className="bg-transparent border-b p-3 my-2 outline-none"
                 required
@@ -132,7 +164,10 @@ const Contact = () => {
                 className="bg-transparent border rounded-lg p-3 my-2 outline-none"
                 required
               ></textarea>
-              <button className="border px-3 py-2 my-3 text-lg backdrop-blur-lg rounded-lg hover:bg-white hover:text-black" type="submit">
+              <button
+                className="border px-3 py-2 my-3 text-lg backdrop-blur-lg rounded-lg hover:bg-white hover:text-black"
+                type="submit"
+              >
                 Submit
               </button>
             </div>
