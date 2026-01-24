@@ -119,6 +119,14 @@ const Contact = () => {
               >
                 <span>FaceBook</span>
               </a>
+              <a
+                href="https://leetcode.com/u/dhirajverma001/"
+                className="social-card"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span>LeetCode</span>
+              </a>
             </div>
           </div>
         </div>
