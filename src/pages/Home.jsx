@@ -46,7 +46,7 @@ const Home = () => {
         <p id="hero-para" className='sm:text-8'>I create seamless, interactive web experiences that bring your ideas to life.</p>
         <div className="flex gap-3">
           <a href={Resume} className='bg-red-400 btn flex-center' target="_blank" >Download CV</a >
-          <Link to={'/contact'} className='btn border btn-hover flex-center'>About Me</Link>
+          <Link to={'/about'} className='btn border btn-hover flex-center'>About Me</Link>
         </div>
       </div>
       {/* <div className='w-[50%]'></div> */}
