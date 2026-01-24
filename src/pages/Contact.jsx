@@ -112,7 +112,7 @@ const Contact = () => {
                 <span>GitHub</span>
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/share/1DVQcENmWP/"
                 className="social-card"
                 target="_blank"
                 rel="noreferrer"
