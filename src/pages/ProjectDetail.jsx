@@ -69,10 +69,10 @@ const ProjectDetail = () => {
   return (
     <div className='page-frame overflow-hidden'>
       <div className='lg:flex justify-between border-b'>
-        <div ref={imgRef} className='lg:w-[30%] py-4'>
-          <img src={project.image?.thumbnail || Image1} alt={project.title} className='w-full h-96 lg:h-full' />
+        <div ref={imgRef} className='lg:w-[58%] py-4'>
+          <img src={project.images?.thumbnail || Image1} alt={project.title} className='w-full h-96 lg: h-full' />
         </div>
-        <div className='lg:w-[60%]'>
+        <div className='lg:w-[40%]'>
           <Title title={project.title} />
           <p className='text-lg py-2'>{project.subtitle}</p>
           <p ref={spanStagger} className='w-full flex flex-wrap  gap-3 text-gray-400'>{project.technologies.map((item, index) => (

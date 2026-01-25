@@ -1,3 +1,8 @@
+import portImg from '../assets/projectImg/portfolio.png'
+import reciImg from '../assets/projectImg/reci-app.png'
+export const Img = {
+  portImg, reciImg
+}
 export const projectsData = {
   projects: [
     {
@@ -25,7 +30,8 @@ export const projectsData = {
         "Custom 404 page and global CDN deployment",
       ],
       images: {
-        thumbnail: "images/portfolio-thumb.jpg",
+        // thumbnail: "images/portfolio-thumb.jpg",
+        thumbnail: portImg,
         full: "images/portfolio-full.jpg",
         mobile: "images/portfolio-mobile.jpg",
       },
@@ -90,7 +96,7 @@ export const projectsData = {
         "Custom 404 page and global CDN deployment",
       ],
       images: {
-        thumbnail: "../assets/projcetImg/reci-app-img.png",
+        thumbnail: reciImg,
         full: "images/portfolio-full.jpg",
         mobile: "images/portfolio-mobile.jpg",
       },
@@ -156,7 +162,7 @@ export const projectsData = {
         "CI/CD deployment on Vercel with preview environments",
       ],
       images: {
-        thumbnail: "images/ecommerce-thumb.jpg",
+        thumbnail: "",
         full: "images/ecommerce-full.jpg",
         mobile: "images/ecommerce-mobile.jpg",
       },
@@ -226,7 +232,7 @@ export const projectsData = {
         "CI/CD deployment on Vercel with preview environments",
       ],
       images: {
-        thumbnail: "images/ecommerce-thumb.jpg",
+        thumbnail: "",
         full: "images/ecommerce-full.jpg",
         mobile: "images/ecommerce-mobile.jpg",
       },

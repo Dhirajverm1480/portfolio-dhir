@@ -3,13 +3,13 @@ import ProjectCard from "../components/ProjectCard";
 import { projectsData, internshipData } from "../constants/data";
 import gsap from "gsap";
 import Title from "../components/Title";
+import Image1 from "../assets/image.png";
 // import { useState } from "react";
 
 const Project = () => {
   // console.log("Data", projectsData);
 
   const internship = internshipData.internships[0];
-  // console.log("Int: ", internship);
 
   useGSAP(() => {
     gsap.from("#projectCard", {
@@ -21,16 +21,9 @@ const Project = () => {
     });
   }, []);
 
-  // const [selectedTech, setSelectedTech] = useState('All')
-  // const filterProject = selectedTech === 'All' ? projectsData.projects : projectsData.projects.filter(project => project.technologies.includes(selectedTech))
-
   return (
     <div className="page-frame overflow-hidden">
-      {/* <div className="w-full md:flex sm:justify-center gap-2 sm:flex-wrap p-2">
-        <button onClick={() => setSelectedTech('All')} className="btn border btn-hover flex-center rounded-full" >All</button>
-        <button onClick={() => setSelectedTech('React')} className="btn border btn-hover flex-center rounded-full" >React</button>
-        <button onClick={() => setSelectedTech('JS')} className="btn border btn-hover flex-center rounded-full" >JS</button>
-      </div> */}
+
       <div className="w-full md:flex sm:justify-start sm:flex-wrap">
         {projectsData.projects.map((item) => (
           <div
@@ -42,23 +35,11 @@ const Project = () => {
               id={item.id}
               title={item.title}
               subtitle={item.subtitle}
-              image={item.images?.thumbnail}
+              image={item.images?.thumbnail || Image1 }
             />
           </div>
         ))}
       </div>
-      {/* <div className="w-full md:flex sm:justify- sm:flex-wrap p-2">
-        {filterProject.map((item) => (
-          <div id="projectCard" key={item.id} className="md:w-[50%] lg:w-[30%] p-2">
-            <ProjectCard
-              id={item.id}
-              title={item.title}
-              subtitle={item.subtitle}
-              image={item.images?.thumbnail}
-            />
-          </div>
-        ))}
-      </div> */}
       <div>
         <Title title={"Internship"} />
         <div className="w-full md:flex justify-between pt-2">

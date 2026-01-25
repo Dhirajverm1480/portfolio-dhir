@@ -15,7 +15,7 @@ const PortfolioContextProvider = (props) => {
 
       if(response.data.success) {
         setProjects(response.data.data)
-        console.log("Project: ", response.data.data)
+        // console.log("Project: ", response.data.data)
       }
     } catch (error) {
       console.error("Sender Error:", error.response?.data || error.message);
