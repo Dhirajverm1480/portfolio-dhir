@@ -128,8 +128,9 @@ This project demonstrates real-world full-stack development practices, including
 
 ### Frontend
 - React.js  
-- HTML5, CSS3, JavaScript (ES6+)  
-- Responsive UI design  
+- HTML5, CSS3, JavaScript (ES6+)
+- Tailwind Css
+- Responsive UI design   
 
 ### Backend
 - Node.js  
@@ -196,3 +197,11 @@ npm install
 
 # Run the application
 npm run dev
+
+
+## 📸 Screenshots
+
+_Add screenshots or a demo GIF here to showcase the UI._
+
+```md
+![Portfolio-dhir Screenshot](.screenshots/portfolio.png)
