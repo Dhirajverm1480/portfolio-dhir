@@ -204,4 +204,4 @@ npm run dev
 _Add screenshots or a demo GIF here to showcase the UI._
 
 ```md
-![Portfolio-dhir Screenshot](screenshots/portfolio.png)
+![Portfolio Screenshot](screenshots/portfolio.png)
