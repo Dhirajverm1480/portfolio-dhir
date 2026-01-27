@@ -171,7 +171,7 @@ This project demonstrates real-world full-stack development practices, including
 
 ## 📂 Project Structure (High-Level)
 
-```text
+<!-- ```text
 portfolio-dhir/
 │
 ├── client/        # React frontend
@@ -180,6 +180,8 @@ portfolio-dhir/
 ├── routes/        # API routes
 ├── controllers/  # Business logic
 └── README.md
+
+--- -->
 
 # Clone the repository
 git clone https://github.com/your-username/portfolio-dhir.git
