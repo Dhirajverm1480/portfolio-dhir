@@ -1,5 +1,5 @@
-import portImg from '../assets/projectImg/portfolio.png'
-import reciImg from '../assets/projectImg/reci-app.png'
+import portImg from '../assets/projectImg/portfolio.webp'
+import reciImg from '../assets/projectImg/reci-app.webp'
 export const Img = {
   portImg, reciImg
 }
