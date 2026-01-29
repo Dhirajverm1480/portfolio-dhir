@@ -85,7 +85,7 @@ npm run dev
 
 ## 📸 Screenshots
 
-_Add screenshots or a demo GIF here to showcase the UI._
+_Desktop UI Home Page Screenshot_
 
 ![Portfolio Screenshot](src/assets/projectImg/portfolio.png)
 

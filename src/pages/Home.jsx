@@ -39,7 +39,7 @@ const Home = () => {
   }, [])
 
   return (
-    <div className='page-frame flex items-center h-[calc(100vh-130px)] sm:h-[calc(100vh-64px)] lg:h-[calc(100vh-64px)]'>
+    <div className='page-frame flex items-center h-[calc(100vh-130px)] sm:h-[calc(100vh-64px)] lg:h-[calc(100vh-64px)] xl:overflow-hidden'>
       <div className='w-full flex flex-col gap-4'>
         <h2 id="hero-heading" className='text-[9vw] lg:text-[5vw]'>Hi, I'm <span>Dhiraj Verma.</span></h2>
         <h4 id="hero-subtitle" className='sm:text-xl'>Frontend Developer| HTML5, CSS3, JS, React.js Enthusiast</h4>

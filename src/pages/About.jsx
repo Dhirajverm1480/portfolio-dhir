@@ -1,5 +1,5 @@
 import Title from "../components/Title";
-import Image from "../assets/image3.jpg";
+import Image from "../assets/image3.webp";
 import { educationData, hobbyData } from "../constants/data.js";
 import Education from "../components/Education.jsx";
 import Hobby from "../components/Hobby.jsx";
