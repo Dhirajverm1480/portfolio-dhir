@@ -3,7 +3,7 @@ import ProjectCard from "../components/ProjectCard";
 import { projectsData, internshipData } from "../constants/data";
 import gsap from "gsap";
 import Title from "../components/Title";
-import Image1 from "../assets/image.png";
+import { Img } from "../constants/data";
 // import { useState } from "react";
 
 const Project = () => {
@@ -35,7 +35,7 @@ const Project = () => {
               id={item.id}
               title={item.title}
               subtitle={item.subtitle}
-              image={item.images?.thumbnail || Image1 }
+              image={item.images?.thumbnail || Img.Image1 }
             />
           </div>
         ))}

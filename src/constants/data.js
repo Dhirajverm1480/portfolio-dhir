@@ -1,8 +1,23 @@
 import portImg from '../assets/projectImg/portfolio.webp'
 import reciImg from '../assets/projectImg/reci-app.webp'
+import Image1 from "../assets/image.png";
 export const Img = {
-  portImg, reciImg
+  portImg, reciImg, Image1
 }
+
+import HomeIcon from '../assets/icons/home.png';
+import CodeIcon from '../assets/icons/code-alt.png';
+import BrainIcon from '../assets/icons/brain.png';
+import PhoneIcon from '../assets/icons/phone.png';
+import BracketIcon from '../assets/icons/bracket-curly.png';
+import EmailImg from "../assets/icons/envelope-open.png";
+import PhoneImg from "../assets/icons/phone.png";
+import GlobeImg from "../assets/icons/globe.png";
+import MenuImg from "../assets/icons/menu-left.png";
+import LinkArrow from "../assets/icons/LinkArrow.png";
+
+export const Icon = {HomeIcon, CodeIcon, BrainIcon, PhoneIcon, BracketIcon, EmailImg, PhoneImg, GlobeImg, MenuImg, LinkArrow}
+
 export const projectsData = {
   projects: [
     {
