@@ -4,11 +4,12 @@ import { educationData, hobbyData } from "../constants/data.js";
 import Education from "../components/Education.jsx";
 import Hobby from "../components/Hobby.jsx";
 import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 import { ScrollTrigger, SplitText } from "gsap/all";
+import { useEffect } from "react";
 
 const About = () => {
-  useGSAP(() => {
+
+  useEffect(() => {
     const aboutParaSplit = new SplitText("#about-para", { type: "lines" });
 
     gsap.from(aboutParaSplit.lines, {
@@ -16,7 +17,7 @@ const About = () => {
       xPercent: -100,
       duration: 1.8,
       ease: "expo.out",
-      stagger: 0.06,
+      stagger: 0.06, // It is a gsap property that use animate multiple elemant at once
     });
 
     gsap.from("#about-img", {
@@ -28,52 +29,40 @@ const About = () => {
 
     ScrollTrigger.create({
       trigger: '#education',
-      start: 'top 50%',
+      start: 'top 80%',
       onEnter: () => {
-        gsap.from("#edu-div", {
+        gsap.from(".edu-div", {
           opacity: 0,
           xPercent: 100,
           duration: 1.6,
           ease: 'expo.out',
-          delay: 0.6,
+          stagger: 0.1,
+          // delay: 0.1,
         })
       },
       // markers: true,
     })
 
     ScrollTrigger.create({
-      trigger: '#education',
-      start: 'bottom bottom',
+      trigger: '#hobby',
+      start: 'top 80%',
       onEnter: () => {
-        gsap.from("#hobby-div", {
+        gsap.from(".hobby-div", {
           opacity: 0,
-          xPercent: 100,
+          yPercent: 100,
           duration: 1.6,
           ease: 'expo.out',
-          delay: 0.8,
+          stagger: 0.1
+          // delay: 0.1,
         })
       },
       // markers: true,
     })
 
-    gsap.from("#edu-div", {
-      opacity: 0,
-      xPercent: 100,
-      duration: 1.6,
-      ease: "expo.out",
-      stagger: 0.06,
-      delay: 1,
-    });
-
-    gsap.from("#hobby-div", {
-      opacity: 0,
-      yPercent: 100,
-      duration: 1.8,
-      ease: "expo.out",
-      stagger: 0.06,
-      delay: 1,
-    });
-  }, []);
+    return () => {
+      ScrollTrigger.getAll().forEach(st => st.kill())
+    }
+  },[])
 
   // console.log("Edu : ", educationData)
 
@@ -110,7 +99,7 @@ const About = () => {
             <div className="sm:w-[25%]"></div>
             <div className="sm:w-[70%]">
               {educationData.education.map((item) => (
-                <div id="edu-div" key={item.id}>
+                <div className="edu-div" key={item.id}>
                   <Education
                     title={item.title}
                     institution={item.institution}
@@ -135,9 +124,8 @@ const About = () => {
             <div className="flex flex-wrap justify-between lg:w-[80%]">
               {hobbyData.hobbies.map((item) => (
                 <div
-                  id="hobby-div"
                   key={item.id}
-                  className="md:w-[45%] lg:w-[30%]"
+                  className="hobby-div md:w-[45%] lg:w-[30%]"
                 >
                   <Hobby
                     title={item.name}

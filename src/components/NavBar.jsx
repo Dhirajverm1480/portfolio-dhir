@@ -1,6 +1,4 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
-// import { Icon } from "../constants/data";
-// import { useState } from "react";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
@@ -40,12 +38,6 @@ const NavBar = () => {
     <header id='header' className="sticky z-50 top-0 backdrop-blur-lg sm:backdrop-blur-0 px-3">
       <nav className="w-full flex justify-between items-center p-3">
         <div className="flex items-center gap-10">
-          {/* <img
-            onClick={() => setVisible(true)}
-            src={Icon.MenuImg}
-            alt="Open Menu"
-            className="hidden cursor-pointer"
-          /> */}
           <Link to="/" className="text-2xl font-sans">
             Dhiraj Verma.
           </Link>
@@ -71,54 +63,6 @@ const NavBar = () => {
           Contact
         </Link>
       </nav>
-
-      {/* <div
-        className={`absolute top-0 left-0 bottom-0 overflow-hidden transition-all bg-[#000000e5] shadow-2xl ${visible ? "w-full h-screen" : "w-0"
-          }`}
-      >
-        <div className="flex flex-col gap-10 pl-3">
-          <div className="flex justify-start py-4 cursor-pointer">
-            <span onClick={() => setVisible(false)} className="side-text">
-              Close
-            </span>
-          </div>
-          <NavLink
-            to="/"
-            onClick={() => setVisible(false)}
-            className="side-text"
-          >
-            <span>Home</span>
-          </NavLink>
-          <NavLink
-            to="/about"
-            onClick={() => setVisible(false)}
-            className="side-text"
-          >
-            <span>About</span>
-          </NavLink>
-          <NavLink
-            to="/project"
-            onClick={() => setVisible(false)}
-            className="side-text"
-          >
-            <span>Project</span>
-          </NavLink>
-          <NavLink
-            to="/skills"
-            onClick={() => setVisible(false)}
-            className="side-text"
-          >
-            <span>Skills</span>
-          </NavLink>
-          <NavLink
-            to="/contact"
-            onClick={() => setVisible(false)}
-            className="side-text"
-          >
-            <span>Contact</span>
-          </NavLink>
-        </div>
-      </div> */}
     </header>
   );
 };
