@@ -19,7 +19,7 @@ export const backendUrl ="https://dhiraj-portfolio-backend.vercel.app"
 const App = () => {
   return (
     <div
-      className="bg-cover text-white bg-no-repeat bg-fixed bg-center "
+      className="bg-cover text-white bg-no-repeat bg-center md:bg-fixed "
       style={{
         backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${Image1})`,
       }}

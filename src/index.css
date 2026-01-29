@@ -7,13 +7,13 @@ html,body{
 }
 
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(./assets/image1.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed; */
   /* background-color: #000000b2; */
-  background-position: center;
+  /* background-position: center;  */
   color: white;
 }
 

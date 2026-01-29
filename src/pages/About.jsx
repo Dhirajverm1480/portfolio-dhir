@@ -10,14 +10,15 @@ import { useEffect } from "react";
 const About = () => {
 
   useEffect(() => {
-    const aboutParaSplit = new SplitText("#about-para", { type: "lines" });
+  const ctx = gsap.context(() => {
+    const split = new SplitText("#about-para", { type: "lines" });
 
-    gsap.from(aboutParaSplit.lines, {
+    gsap.from(split.lines, {
       opacity: 0,
       xPercent: -100,
       duration: 1.8,
       ease: "expo.out",
-      stagger: 0.06, // It is a gsap property that use animate multiple elemant at once
+      stagger: 0.06,
     });
 
     gsap.from("#about-img", {
@@ -28,41 +29,39 @@ const About = () => {
     });
 
     ScrollTrigger.create({
-      trigger: '#education',
-      start: 'top 80%',
+      trigger: "#education",
+      start: "top 80%",
+      once: true,
       onEnter: () => {
         gsap.from(".edu-div", {
           opacity: 0,
           xPercent: 100,
           duration: 1.6,
-          ease: 'expo.out',
+          ease: "expo.out",
           stagger: 0.1,
-          // delay: 0.1,
-        })
+        });
       },
-      // markers: true,
-    })
+    });
 
     ScrollTrigger.create({
-      trigger: '#hobby',
-      start: 'top 80%',
+      trigger: "#hobby",
+      start: "top 80%",
+      once: true,
       onEnter: () => {
         gsap.from(".hobby-div", {
           opacity: 0,
           yPercent: 100,
           duration: 1.6,
-          ease: 'expo.out',
-          stagger: 0.1
-          // delay: 0.1,
-        })
+          ease: "expo.out",
+          stagger: 0.1,
+        });
       },
-      // markers: true,
-    })
+    });
+  });
 
-    return () => {
-      ScrollTrigger.getAll().forEach(st => st.kill())
-    }
-  },[])
+  return () => ctx.revert();
+}, []);
+
 
   // console.log("Edu : ", educationData)
 
@@ -86,8 +85,8 @@ const About = () => {
             Contact Me
           </button>
         </div>
-        <div className=" md:w-[30%] lg:w-[50%] flex justify-center items-center py-4">
-          <img id="about-img" src={Image} alt="" className="w-full  md:w-96" />
+        <div className="w-full md:w-[30%] lg:w-[50%] md:flex md:justify-center md:items-center py-4">
+          <img id="about-img" src={Image} alt="Portrait of Dhiraj" className="w-full  md:w-96" />
         </div>
       </div>
 
