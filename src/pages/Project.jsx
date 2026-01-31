@@ -1,8 +1,7 @@
 import { useGSAP } from "@gsap/react";
-import ProjectCard from "../components/ProjectCard";
+import {ProjectCard, Title} from "../components/index";
 import { projectsData, internshipData } from "../constants/data";
 import gsap from "gsap";
-import Title from "../components/Title";
 import { Img } from "../constants/data";
 // import { useState } from "react";
 

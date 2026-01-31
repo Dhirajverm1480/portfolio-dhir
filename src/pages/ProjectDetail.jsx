@@ -2,8 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { projectsData } from '../constants/data.js';
 import Image1 from "../assets/image.png";
-import Title from '../components/Title.jsx';
-import ProjectCard from '../components/ProjectCard.jsx';
+import { Title, ProjectCard} from '../components/index.js'
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 

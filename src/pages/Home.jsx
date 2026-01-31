@@ -1,3 +1,4 @@
+import dayjs from "dayjs";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/all";
@@ -61,6 +62,7 @@ const Home = () => {
         </div>
       </div>
       {/* <div className='w-[50%]'></div> */}
+      {/* <time>{dayjs().format('ddd MMM D h:mm A')}</time> */}
     </div>
   )
 }
