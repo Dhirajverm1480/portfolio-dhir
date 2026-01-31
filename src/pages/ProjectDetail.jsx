@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { useEffect, useRef, useState } from 'react'
+import { useParams } from 'react-router-dom'
 import { projectsData } from '../constants/data.js';
 import Image1 from "../assets/image.png";
 import Title from '../components/Title.jsx';

@@ -1,11 +1,65 @@
 import Title from "../components/Title";
-import EmailImg from "../assets/icons/envelope-open.png";
-import PhoneImg from "../assets/icons/phone.png";
-import GlobeImg from "../assets/icons/globe.png";
-// import { Link } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
 import { backendUrl } from "../App";
+import { Icon } from "../constants/data";
+
+const socialLinks = [
+  {
+    id: 1,
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/dhirajverma-v1",
+    className: "social-card",
+    target: "_blank",
+    rel: "noopener noreferrer"
+  },
+  {
+    id: 2,
+    name: "GitHub",
+    href: "https://github.com/Dhirajverm1480",
+    className: "social-card",
+    target: "_blank",
+    rel: "noopener noreferrer"
+  },
+  {
+    id: 3,
+    name: "FaceBook",
+    href: "https://www.facebook.com/share/1DVQcENmWP/",
+    className: "social-card",
+    target: "_blank",
+    rel: "noopener noreferrer"
+  },
+  {
+    id: 4,
+    name: "LeetCode",
+    href: "https://leetcode.com/u/dhirajverma001/",
+    className: "social-card",
+    target: "_blank",
+    rel: "noopener noreferrer"
+  },
+
+];
+
+const addresses = [
+  {
+    id: 1,
+    name: "Email",
+    address: "dhirajv418@gmail.com",
+    image: Icon.EmailImg,
+  },
+  {
+    id: 2,
+    name: "Phone No",
+    address:  "+91 63917324",
+    image: Icon.PhoneIcon,
+  },
+  {
+    id: 3,
+    name: "Address",
+    address: "Mayur Vihar Phase III Delhi India.",
+    image: Icon.GlobeImg,
+  }
+]
 
 const Contact = () => {
   const [senderName, setSenderName] = useState("");
@@ -16,15 +70,6 @@ const Contact = () => {
   const onSubmitHandling = async (e) => {
     try {
       e.preventDefault();
-      // const formData = new FormData();
-
-      // formData.append("senderName", senderName);
-      // formData.append("senderEmail", senderEmail);
-      // formData.append("senderPhone", senderPhone);
-      // formData.append("senderMessage", senderMessage);
-
-      // This only used when you want to post the file on your backend if not you only push json data just like written in below
-
       const formData = {
         senderName,
         senderEmail,
@@ -43,7 +88,7 @@ const Contact = () => {
       );
       if (response.data.success) {
         console.log("Response Success: ", response.data.success);
-        alert("Thank you very much for contact us"||  response.data.sucess);
+        alert("Thank you very much for contact us" || response.data.sucess);
 
         // Clear form
         setSenderName("");
@@ -56,7 +101,7 @@ const Contact = () => {
       console.error("Sender Error:", error.response?.data || error.message);
       alert(
         error.response?.data?.message ||
-          "Failed to submit the post Sender Message."
+        "Failed to submit the post Sender Message."
       );
     }
   };
@@ -70,63 +115,36 @@ const Contact = () => {
             <Title title={"Contact"} />
           </div>
           <div className="mx-2 py-4">
-            <div className="mb-4 flex items-center gap-2">
-              <img src={EmailImg} alt="" className="w-8" />
-              <div className="flex flex-col">
-                <span>Email: </span>
-                <span>dhirajv418@gmail.com</span>
-              </div>
-            </div>
-            <div className="mb-4 flex items-center gap-2">
-              <img src={PhoneImg} alt="" className="w-8" />
-              <div className="flex flex-col">
-                <span>Phone: </span>
-                <span>+91 6391732413</span>
-              </div>
-            </div>
-            <div className="mb-4 flex items-center gap-2">
-              <img src={GlobeImg} alt="" className="w-8" />
-              <div className="flex flex-col">
-                <span>Address: </span>
-                <span>Khora Colony G.Z.B (U.P) India (Barat). </span>
-              </div>
-            </div>
+            {
+              addresses.map((item) => (
+                <div key={item.id} className="mb-4 flex items-center gap-2">
+                  <img src={item.image} alt="" className="w-8" />
+                  <div className="flex flex-col">
+                    <span>{item.name}: </span>
+                    <span>{item.address}</span>
+                  </div>
+                </div>
+              ))
+            }
           </div>
           <div className="my-4">
             <Title title={"Social"} />
             <div className="flex flex-wrap py-3">
-              <a
-                href="https://www.linkedin.com/in/dhirajverma-v1"
-                className="social-card"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span>Linkedin</span>
-              </a>
-              <a
-                href="https://github.com/Dhirajverm1480"
-                className="social-card"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span>GitHub</span>
-              </a>
-              <a
-                href="https://www.facebook.com/share/1DVQcENmWP/"
-                className="social-card"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span>FaceBook</span>
-              </a>
-              <a
-                href="https://leetcode.com/u/dhirajverma001/"
-                className="social-card"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span>LeetCode</span>
-              </a>
+              {
+                socialLinks.map((item) => (
+                  <div key={item.id}>
+                    <a
+                      href={item.href}
+                      className={item.className}
+                      target={item.target}
+                      rel={item.rel} // its only for security purpose
+                    >
+                      <span>{item.name}</span>
+                    </a>
+                  </div>
+                ))
+              }
+              <small>Some social links may require you to log in to the specific platform to view my profile.</small>
             </div>
           </div>
         </div>
