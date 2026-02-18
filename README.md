@@ -87,7 +87,7 @@ npm run dev
 
 _Desktop UI Home Page Screenshot_
 
-![Portfolio Screenshot](src/assets/projectImg/portfolio.png)
+![Portfolio Screenshot](src/assets/projectImg/portfolio.webp)
 
 ```md
 
