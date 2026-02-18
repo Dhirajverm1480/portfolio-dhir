@@ -4,6 +4,7 @@ import { educationData, hobbyData } from "../constants/data.js";
 import gsap from "gsap";
 import { ScrollTrigger, SplitText } from "gsap/all";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const About = () => {
 
@@ -79,9 +80,9 @@ const About = () => {
             crafting pixel-perfect layouts or optimizing performance, I’m always
             looking to create intuitive and engaging digital experiences.
           </p>
-          <button className="border px-3 py-2 my-3 text-lg rounded-lg hover:bg-white hover:text-black">
+          <Link to={"/contact"} className="border px-3 py-2 my-3 text-lg rounded-lg hover:bg-white hover:text-black">
             Contact Me
-          </button>
+          </Link>
         </div>
         <div className="w-full md:w-[30%] lg:w-[50%] md:flex md:justify-center md:items-center py-4">
           <img id="about-img" src={Image} alt="Portrait of Dhiraj" className="w-full  md:w-96" />

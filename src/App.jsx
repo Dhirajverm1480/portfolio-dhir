@@ -5,6 +5,7 @@ import { ScrollTrigger, SplitText } from "gsap/all";
 import { NavBar, BottomNav } from "./components/index";
 import { Home, About, Project, ProjectDetail, Skills, Contact } from "./pages/index";
 import gsap from "gsap";
+import ScrollToTop from "./components/ScrollToTop";
 // import BottomNav from "./components/BottomNav";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -21,6 +22,7 @@ const App = () => {
       }}
     >
       <NavBar />
+      <ScrollToTop />
       <main>
         <Routes>
           <Route path="/" element={<Home />} />

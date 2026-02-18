@@ -1,8 +1,9 @@
 import portImg from '../assets/projectImg/portfolio.webp'
 import reciImg from '../assets/projectImg/reci-app.webp'
+import techItEasyImg from '../assets/projectImg/techItEasy.webp'
 import Image1 from "../assets/image.png";
 export const Img = {
-  portImg, reciImg, Image1
+  portImg, reciImg, Image1, techItEasyImg
 }
 
 import HomeIcon from '../assets/icons/home.png';
@@ -168,8 +169,8 @@ export const projectsData = {
         "Vercel",
       ],
       features: [
-        "Real-time product updates with Sanity CMS and GROQ queries",
-        "Stripe integration for secure checkout",
+        // "Real-time product updates with Sanity CMS and GROQ queries",
+        // "Stripe integration for secure checkout",
         "Category filtering, search, and responsive product pages",
         "Server-side rendering and ISR for optimal performance",
         "Persistent cart with local storage and React Context",
@@ -177,13 +178,13 @@ export const projectsData = {
         "CI/CD deployment on Vercel with preview environments",
       ],
       images: {
-        thumbnail: "",
+        thumbnail: techItEasyImg,
         full: "images/ecommerce-full.jpg",
         mobile: "images/ecommerce-mobile.jpg",
       },
       links: {
-        live: "https://store.yourdomain.com",
-        github: "https://github.com/yourusername/ecommerce-store",
+        live: "https://techiteasy-ten.vercel.app/",
+        github: "https://github.com/Dhirajverm1480/Techiteasy",
       },
       tags: [
         "fullstack",
