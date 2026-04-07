@@ -4,6 +4,7 @@ import Skill from '../components/Skill'
 import Title from '../components/Title'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
+import Service from '../components/Service'
 
 const Skills = () => {
 
@@ -30,6 +31,9 @@ const Skills = () => {
             </div>
           ))
         }
+      </div>
+      <div>
+        <Service />
       </div>
 
       {/* <div>

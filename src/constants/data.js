@@ -17,7 +17,7 @@ import GlobeImg from "../assets/icons/globe.png";
 import MenuImg from "../assets/icons/menu-left.png";
 import LinkArrow from "../assets/icons/LinkArrow.png";
 
-export const Icon = {HomeIcon, CodeIcon, BrainIcon, PhoneIcon, BracketIcon, EmailImg, PhoneImg, GlobeImg, MenuImg, LinkArrow}
+export const Icon = { HomeIcon, CodeIcon, BrainIcon, PhoneIcon, BracketIcon, EmailImg, PhoneImg, GlobeImg, MenuImg, LinkArrow }
 
 export const projectsData = {
   projects: [
@@ -1486,4 +1486,296 @@ export const skillData = {
       status: "Active",
     },
   ],
+};
+
+export const servicesData = {
+  section: {
+    title: "My Services",
+    subtitle: "What I Offer",
+    description:
+      "I provide end-to-end web development services, from designing intuitive interfaces to building scalable backend systems and deploying production-ready applications."
+  },
+
+  services: [
+    {
+      id: "001",
+      title: "Frontend Development",
+      shortDescription: "Modern, responsive UI development",
+      description:
+        "I build fast, accessible, and visually appealing user interfaces using modern frontend technologies and best practices.",
+
+      icon: {
+        name: "code",
+        library: "lucide", // or fontawesome, heroicons
+      },
+
+      category: "development",
+      level: "advanced",
+
+      technologies: [
+        { name: "HTML", level: "expert" },
+        { name: "CSS", level: "expert" },
+        { name: "JavaScript", level: "expert" },
+        { name: "React", level: "advanced" },
+        { name: "Next.js", level: "advanced" }
+      ],
+
+      features: [
+        {
+          title: "Responsive Design",
+          description: "Mobile-first layouts that adapt to all screen sizes"
+        },
+        {
+          title: "Cross-browser Compatibility",
+          description: "Consistent experience across all modern browsers"
+        },
+        {
+          title: "Performance Optimization",
+          description: "Optimized rendering and fast load times"
+        }
+      ],
+
+      metrics: {
+        projectsCompleted: 25,
+        yearsExperience: 2
+      },
+
+      pricing: {
+        startingFrom: 199,
+        currency: "USD",
+        type: "project"
+      },
+
+      tags: ["UI", "Web", "SPA"],
+
+      status: "active",
+      featured: true,
+      order: 1
+    },
+
+    {
+      id: "002",
+      title: "Backend Development",
+      shortDescription: "Scalable APIs & server-side logic",
+      description:
+        "I develop secure and scalable backend systems, APIs, and database architectures to power modern applications.",
+
+      icon: {
+        name: "server",
+        library: "lucide"
+      },
+
+      category: "development",
+      level: "advanced",
+
+      technologies: [
+        { name: "Node.js", level: "advanced" },
+        { name: "Express", level: "advanced" },
+        { name: "MongoDB", level: "advanced" },
+        { name: "PostgreSQL", level: "intermediate" }
+      ],
+
+      features: [
+        {
+          title: "RESTful APIs",
+          description: "Clean and scalable API architecture"
+        },
+        {
+          title: "Authentication",
+          description: "JWT, OAuth, and secure login systems"
+        },
+        {
+          title: "Database Design",
+          description: "Efficient and normalized database schemas"
+        }
+      ],
+
+      metrics: {
+        projectsCompleted: 20,
+        apiBuilt: 40
+      },
+
+      pricing: {
+        startingFrom: 249,
+        currency: "USD",
+        type: "project"
+      },
+
+      tags: ["API", "Server", "Database"],
+      status: "active",
+      featured: true,
+      order: 2
+    },
+
+    {
+      id: "003",
+      title: "Full Stack Development",
+      shortDescription: "Complete web application solutions",
+      description:
+        "From frontend to backend, I deliver fully functional and scalable web applications tailored to your needs.",
+
+      icon: {
+        name: "layers",
+        library: "lucide"
+      },
+
+      category: "fullstack",
+      level: "expert",
+
+      technologies: [
+        { name: "MERN Stack", level: "advanced" },
+        { name: "GraphQL", level: "intermediate" },
+        { name: "REST APIs", level: "expert" }
+      ],
+
+      features: [
+        {
+          title: "End-to-End Development",
+          description: "Complete product development lifecycle"
+        },
+        {
+          title: "Seamless Integration",
+          description: "Frontend + backend synchronization"
+        },
+        {
+          title: "Scalable Architecture",
+          description: "Designed for growth and performance"
+        }
+      ],
+
+      workflow: [
+        "Requirement Analysis",
+        "UI/UX Planning",
+        "Development",
+        "Testing",
+        "Deployment"
+      ],
+
+      pricing: {
+        startingFrom: 499,
+        currency: "USD",
+        type: "project"
+      },
+
+      tags: ["FullStack", "WebApp"],
+      featured: true,
+      order: 3
+    },
+
+    {
+      id: "004",
+      title: "UI/UX Implementation",
+      shortDescription: "Pixel-perfect design to code",
+      description:
+        "I convert design files into high-quality, accessible, and interactive web interfaces.",
+
+      icon: {
+        name: "figma",
+        library: "lucide"
+      },
+
+      category: "design",
+      level: "advanced",
+
+      tools: ["Figma", "Adobe XD"],
+
+      features: [
+        {
+          title: "Design to Code",
+          description: "Exact implementation of UI designs"
+        },
+        {
+          title: "Accessibility",
+          description: "WCAG-compliant interfaces"
+        },
+        {
+          title: "Micro Interactions",
+          description: "Smooth animations and transitions"
+        }
+      ],
+
+      tags: ["Design", "UX", "Frontend"],
+      order: 4
+    },
+
+    {
+      id: "005",
+      title: "Performance Optimization",
+      shortDescription: "Speed & SEO improvements",
+      description:
+        "I optimize applications for speed, SEO, and better user experience.",
+
+      icon: {
+        name: "zap",
+        library: "lucide"
+      },
+
+      category: "optimization",
+
+      tools: ["Lighthouse", "Webpack", "Vite"],
+
+      features: [
+        {
+          title: "Lazy Loading",
+          description: "Load assets only when needed"
+        },
+        {
+          title: "Code Splitting",
+          description: "Reduce bundle sizes"
+        },
+        {
+          title: "SEO Optimization",
+          description: "Improve search engine rankings"
+        }
+      ],
+
+      metrics: {
+        avgPerformanceIncrease: "40%"
+      },
+
+      order: 5
+    },
+
+    {
+      id: "006",
+      title: "Deployment & DevOps",
+      shortDescription: "CI/CD & cloud deployment",
+      description:
+        "I deploy, monitor, and maintain applications using modern DevOps practices.",
+
+      icon: {
+        name: "cloud",
+        library: "lucide"
+      },
+
+      category: "devops",
+
+      technologies: ["Docker", "AWS", "Vercel", "CI/CD"],
+
+      features: [
+        {
+          title: "Cloud Deployment",
+          description: "Deploy apps on scalable infrastructure"
+        },
+        {
+          title: "CI/CD Pipelines",
+          description: "Automated build and deployment workflows"
+        },
+        {
+          title: "Monitoring",
+          description: "Track performance and uptime"
+        }
+      ],
+
+      order: 6
+    }
+  ],
+
+  filters: ["all", "development", "design", "devops", "optimization"],
+
+  settings: {
+    showFeaturedOnly: false,
+    enableAnimations: true,
+    layout: "grid" // grid | list
+  }
 };
