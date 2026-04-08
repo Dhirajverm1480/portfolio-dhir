@@ -1513,11 +1513,11 @@ export const servicesData = {
       level: "advanced",
 
       technologies: [
-        { name: "HTML", level: "expert" },
-        { name: "CSS", level: "expert" },
-        { name: "JavaScript", level: "expert" },
-        { name: "React", level: "advanced" },
-        { name: "Next.js", level: "advanced" }
+        { id: '001', name: "HTML", level: "expert" },
+        { id: '002', name: "CSS", level: "expert" },
+        { id: '003', name: "JavaScript", level: "expert" },
+        { id: '004', name: "React", level: "advanced" },
+        { id: '005', name: "Next.js", level: "advanced" }
       ],
 
       features: [
@@ -1750,7 +1750,12 @@ export const servicesData = {
 
       category: "devops",
 
-      technologies: ["Docker", "AWS", "Vercel", "CI/CD"],
+      technologies: [
+        { id: '001', name: "Docker", },
+        { id: "002", name: "AWS", },
+        { id: '003', name: "Vercel", },
+        { id: '004', name: "CI/CD" },
+      ],
 
       features: [
         {
