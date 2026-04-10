@@ -11,7 +11,7 @@ const Service = () => {
             key={item.id}
             className="border py-4 px-2 text-center mb-2 rounded-md backdrop-blur-xl cursor-pointer hover:-rotate-1"
           >
-            <p>{item.icon.name}</p>
+            {/* <p>{item.icon.name}</p> */}
             <h2>{item.title}</h2>
             <div className="flex gap-1 justify-center items-center">
               {item.technologies?.map((tech) => (

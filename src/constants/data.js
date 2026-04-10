@@ -1773,7 +1773,47 @@ export const servicesData = {
       ],
 
       order: 6
+    },
+
+    {
+      id: "007",
+      title: "Mobile App Development",
+      shortDescription: "CI/CD & cloud deployment",
+      description:
+        "I deploy, monitor, and maintain applications using modern DevOps practices.",
+
+      icon: {
+        name: "cloud",
+        library: "lucide"
+      },
+
+      category: "devops",
+
+      technologies: [
+        { id: '001', name: "React Native", },
+        { id: "002", name: "NativeWind", },
+        // { id: '003', name: "Vercel", },
+        // { id: '004', name: "CI/CD" },
+      ],
+
+      features: [
+        {
+          title: "Responsive Design",
+          description: "Mobile-first layouts that adapt to all screen sizes"
+        },
+        {
+          title: "Cross-Device Compatibility",
+          description: "Consistent experience across all modern browsers"
+        },
+        {
+          title: "Performance Optimization",
+          description: "Optimized rendering and fast load times"
+        }
+      ],
+
+      order: 6
     }
+
   ],
 
   filters: ["all", "development", "design", "devops", "optimization"],
