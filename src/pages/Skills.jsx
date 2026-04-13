@@ -21,9 +21,12 @@ const Skills = () => {
   
   return (
     <div className='page-frame'>
+      <div>
+        <Service />
+      </div>
       <div></div>
-      {/* <Title title={'Skills'} /> */}
-      <div className='w-full sm:flex flex-wrap justify-between backdrop-blur-sm'>
+      <Title title={'Skills'} />
+      <div className='w-full sm:flex flex-wrap justify-between backdrop-blur-sm my-16'>
         {
           skillData.skills.map((item) => (
             <div id='skill-div' key={item.id} className='md:w-[45%] lg:w-[30%]'>
@@ -31,9 +34,6 @@ const Skills = () => {
             </div>
           ))
         }
-      </div>
-      <div>
-        <Service />
       </div>
 
       {/* <div>

@@ -19,6 +19,15 @@ import LinkArrow from "../assets/icons/LinkArrow.png";
 
 export const Icon = { HomeIcon, CodeIcon, BrainIcon, PhoneIcon, BracketIcon, EmailImg, PhoneImg, GlobeImg, MenuImg, LinkArrow }
 
+import ServerImg from '../assets/serviceImg/serverImg.png';
+import FigmaImg from '../assets/serviceImg/figmaImg.png';
+import CloudCompImg from '../assets/serviceImg/cloudComp.png';
+import LayerImg from '../assets/serviceImg/layerImg.png';
+import MobileImg from '../assets/serviceImg/mobileImg.png';
+import PerformanceImg from '../assets/serviceImg/performanceImg.png';
+
+export const serviceImg = {ServerImg, FigmaImg, CloudCompImg, LayerImg}
+
 export const projectsData = {
   projects: [
     {
@@ -1506,6 +1515,7 @@ export const servicesData = {
 
       icon: {
         name: "code",
+        icon: CodeIcon,
         library: "lucide", // or fontawesome, heroicons
       },
 
@@ -1562,6 +1572,7 @@ export const servicesData = {
 
       icon: {
         name: "server",
+        icon: ServerImg,
         library: "lucide"
       },
 
@@ -1616,6 +1627,7 @@ export const servicesData = {
 
       icon: {
         name: "layers",
+        icon: LayerImg,
         library: "lucide"
       },
 
@@ -1671,6 +1683,7 @@ export const servicesData = {
 
       icon: {
         name: "figma",
+        icon: FigmaImg,
         library: "lucide"
       },
 
@@ -1707,6 +1720,7 @@ export const servicesData = {
 
       icon: {
         name: "zap",
+        icon: PerformanceImg,
         library: "lucide"
       },
 
@@ -1745,6 +1759,7 @@ export const servicesData = {
 
       icon: {
         name: "cloud",
+        icon: CloudCompImg,
         library: "lucide"
       },
 
@@ -1784,6 +1799,7 @@ export const servicesData = {
 
       icon: {
         name: "cloud",
+        icon: MobileImg,
         library: "lucide"
       },
 
@@ -1792,6 +1808,46 @@ export const servicesData = {
       technologies: [
         { id: '001', name: "React Native", },
         { id: "002", name: "NativeWind", },
+        // { id: '003', name: "Vercel", },
+        // { id: '004', name: "CI/CD" },
+      ],
+
+      features: [
+        {
+          title: "Responsive Design",
+          description: "Mobile-first layouts that adapt to all screen sizes"
+        },
+        {
+          title: "Cross-Device Compatibility",
+          description: "Consistent experience across all modern browsers"
+        },
+        {
+          title: "Performance Optimization",
+          description: "Optimized rendering and fast load times"
+        }
+      ],
+
+      order: 6
+    },
+
+    {
+      id: "008",
+      title: "Version Control",
+      shortDescription: "CI/CD & cloud deployment",
+      description:
+        "I deploy, monitor, and maintain applications using modern DevOps practices.",
+
+      icon: {
+        name: "cloud",
+        icon: MobileImg,
+        library: "lucide"
+      },
+
+      category: "Version",
+
+      technologies: [
+        { id: '001', name: "Git", },
+        { id: "002", name: "Github", },
         // { id: '003', name: "Vercel", },
         // { id: '004', name: "CI/CD" },
       ],
